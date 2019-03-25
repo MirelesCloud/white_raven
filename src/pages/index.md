@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: White Raven Creations
 image: /img/mural-icon11-large.jpg
-heading: Great coffee with a conscience
+heading: White Raven Creations
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
