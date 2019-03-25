@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `center`,
         backgroundAttachment: `fixed`,
       }}
     >
@@ -41,8 +41,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(77, 0, 153), 68, 0) 0.5rem 0px 0px, rgb(77, 0, 153) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(77, 0, 153)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -54,8 +54,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(77, 0, 153) 0.5rem 0px 0px, rgb(77, 0, 153) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(77, 0, 153)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -65,6 +65,53 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="tile is-ancestor">
+          <div className="tile is-vertical is-8">
+            <div className="tile">
+              <div className="tile is-parent is-vertical">
+                <article className="tile is-child notification is-primary">
+                  <p className="title">Vertical...</p>
+                  <p className="subtitle">Top tile</p>
+                </article>
+                <article className="tile is-child notification is-warning">
+                  <p className="title">...tiles</p>
+                  <p className="subtitle">Bottom tile</p>
+                </article>
+              </div>
+              <div className="tile is-parent">
+                <article className="tile is-child notification is-info">
+                  <p className="title">Middle tile</p>
+                  <p className="subtitle">With an image</p>
+                  <figure className="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png" alt="test"/>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div className="tile is-parent">
+              <article className="tile is-child notification is-danger">
+                <p className="title">Wide tile</p>
+                <p className="subtitle">Aligned with the right tile</p>
+                <div className="content">
+                </div>
+              </article>
+            </div>
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child notification is-success">
+              <div className="content">
+                <p className="title">Tall tile</p>
+                <p className="subtitle">With even more content</p>
+                <div className="content">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
