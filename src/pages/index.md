@@ -25,7 +25,7 @@ intro:
       text: Bird Bural
     - image: /img/mural-icon11.jpg
       text: Mural
-    - image: /img/mural-full22.jpg
+    - image: /img/raven-love-162.jpg
       text: Mural
   heading: What we offer
   description: >
