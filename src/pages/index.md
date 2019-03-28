@@ -3,7 +3,7 @@ templateKey: index-page
 title: White Raven Creations
 image: /img/mural-icon11-large.jpg
 heading: White Raven Creations
-subheading: Support sustainable farming while enjoying a cup
+subheading: Fine Art That Speaks to the Heart
 mainpitch:
   title: Why Kaldi
   description: >
