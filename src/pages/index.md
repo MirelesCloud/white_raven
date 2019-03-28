@@ -21,14 +21,12 @@ intro:
     - image: /img/raven-love-213.jpg
       text: |
         Raven Love
-    - image: /img/mural-center-detail13.jpg
-      text: |
-        Mural Center
-    - image: /img/raven-love-52.jpg
-      text: |
-        Raven Love
     - image: /img/mural-birds-detail11.jpg
       text: Bird Bural
+    - image: /img/mural-icon11.jpg
+      text: Mural
+    - image: /img/mural-full22.jpg
+      text: Mural
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
