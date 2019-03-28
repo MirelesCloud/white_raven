@@ -68,6 +68,28 @@ export const IndexPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div className="tile is-ancestor">
+          <div className="tile is-6 is-vertical is-parent">
+            <div className="tile is-child box">
+              <figure className="image">
+
+              </figure>
+            </div>
+            <div className="tile is-child box">
+              <p className="title">Two</p>
+            </div>
+          </div>
+          <div className="tile is-parent">
+            <div className="tile is-child box">
+              <p className="title">Three</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="tile is-ancestor">
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
