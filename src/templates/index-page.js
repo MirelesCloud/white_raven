@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+
 import BlogRoll from '../components/BlogRoll'
+import FeatureImages from '../components/FeatureImages'
 
 export const IndexPageTemplate = ({
   image,
@@ -41,8 +42,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(77, 0, 153), 68, 0) 0.5rem 0px 0px, rgb(77, 0, 153) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(77, 0, 153)',
+              'rgb(51, 0, 102), 68, 0) 0.5rem 0px 0px, rgb(51, 0, 102) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(51, 0, 102)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -54,8 +55,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(77, 0, 153) 0.5rem 0px 0px, rgb(77, 0, 153) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(77, 0, 153)',
+              'rgb(51, 0, 102) 0.5rem 0px 0px, rgb(51, 0, 102) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(51, 0, 102)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -67,12 +68,15 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
+        <FeatureImages gridItems={intro.blurbs} />
+      </div>
+    </section>
+    <section className="section section--gradient">
+      <div className="container">
         <div className="tile is-ancestor">
           <div className="tile is-6 is-vertical is-parent">
             <div className="tile is-child box">
-              <figure className="image">
-
-              </figure>
+              <p className="title">One</p>
             </div>
             <div className="tile is-child box">
               <p className="title">Two</p>
@@ -84,7 +88,6 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <section className="section section--gradient">
@@ -156,7 +159,7 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
