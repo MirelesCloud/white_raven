@@ -6,7 +6,10 @@ const FeatureImages = ({ gridItems }) => (
     {gridItems.map(item => (
       <div key={item.text} className="column is-6">
         <div className="section">
-          <figure className="image">
+          <figure className="image" style={{
+            maxWidth: "500px",
+            height: "auto"
+          }}>
             <PreviewCompatibleImage imageInfo={item} />
           </figure>
         </div>

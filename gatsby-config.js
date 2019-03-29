@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'White Raven Creations',
     description:
-      'Art that speaks to the heart',
+      'Fine Art that speaks to the heart',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

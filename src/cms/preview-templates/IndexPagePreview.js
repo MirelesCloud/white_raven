@@ -10,6 +10,10 @@ const IndexPagePreview = ({ entry, getAsset }) => {
     <IndexPageTemplate
       image={entry.getIn(['data', 'image'])}
       title={entry.getIn(['data', 'title'])}
+      gallery={{
+        title: entry.getIn(['data', 'title']),
+        image: entry.getIn(['data', 'image'])
+      }}
       heading={entry.getIn(['data', 'heading'])}
       subheading={entry.getIn(['data', 'subheading'])}
       description={entry.getIn(['data', 'description'])}
