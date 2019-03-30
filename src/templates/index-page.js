@@ -39,7 +39,6 @@ export const IndexPageTemplate = ({
         <FeatureImages gridItems={intro.blurbs} />
       </div>
     </section>
-
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -66,13 +65,13 @@ export const IndexPageTemplate = ({
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
+                      See all art
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    My latest
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
