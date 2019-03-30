@@ -35,9 +35,10 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-primary"
+        className="navbar is-primary is-fixed-top"
         role="navigation"
         aria-label="main-navigation"
+        
       >
         <div className="container">
           <div className="navbar-brand">
