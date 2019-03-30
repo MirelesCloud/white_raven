@@ -10,7 +10,7 @@ import FeatureImages from '../components/FeatureImages'
 export const IndexPageTemplate = ({
   image,
   title,
-  gallery,
+  feature,
   heading,
   subheading,
   mainpitch,
@@ -32,6 +32,13 @@ export const IndexPageTemplate = ({
           <p class="title">
           </p>
         </div>
+      </div>
+    </section>
+    <section className="section">
+      <div className="container has-text-centered">
+        <p className="title is-1">Portfolio</p>
+          <p class="subtitle is-3">Subtitle 3</p>
+
       </div>
     </section>
     <section className="section section--gradient">
@@ -118,7 +125,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        gallery={frontmatter.gallery}
+        feature={frontmatter.feature}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}

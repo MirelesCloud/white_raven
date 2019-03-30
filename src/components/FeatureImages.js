@@ -7,7 +7,7 @@ const FeatureImages = ({ gridItems }) => (
       <div key={item.text} className="column is-6">
         <div className="section">
           <figure className="image" style={{
-            maxWidth: "500px",
+            maxWidth: "600px",
             height: "auto"
           }}>
             <PreviewCompatibleImage imageInfo={item} />
