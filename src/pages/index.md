@@ -8,10 +8,12 @@ feature:
   heading: Angel
   description: Angel Mural
   gallery:
-    - title: Raven Love
-      image: /img/raven-love-213.jpg
+    - title: Kekahe
+      image: /img/img_3102.jpg
     - title: Bird Mural
       image: /img/mural-birds-detail11.jpg
+    - title: Raven Love
+      image: /img/raven-love-213.jpg
     - title: Elephant Mural
       image: /img/raven-love-52.jpg
     - title: Mural
@@ -22,8 +24,6 @@ feature:
       image: /img/raven-love-255.jpg
     - title: Raven Love 250
       image: /img/img_0250.jpg
-    - title: Kekahe
-      image: /img/img_3102.jpg
     - title: Image 614
       image: /img/img_0614.jpg
     - title: Blacklight 12
