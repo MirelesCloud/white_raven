@@ -1,19 +1,23 @@
 ---
 templateKey: index-page
 title: White Raven Creations
-image: /img/raven-love-213-large.jpg
+image: /img/mural-birds-detail11-large.jpg
 heading: White Raven Creations
 subheading: Fine Art That Speaks to the Heart
 feature:
+  heading: Angel
+  description: Angel Mural
   gallery:
-    - image: /img/raven-love-213.jpg
-      title: Raven Love
-    - image: /img/mural-birds-detail11.jpg
-      title: Bird Mural
-    - image: /img/mural-icon11.jpg
-      title: Mural
-    - image: /img/raven-love-162.jpg
-      title: Mural
+    - title: Raven Love
+      image: /img/raven-love-213.jpg
+    - title: Bird Mural
+      image: /img/mural-birds-detail11.jpg
+    - title: Mural
+      image: /img/mural-icon11.jpg
+    - title: Mural
+      image: /img/raven-love-162.jpg
+    - title: Elephant Mural
+      image: /img/raven-love-52.jpg
 mainpitch:
   title: Why Kaldi
   description: >
@@ -60,3 +64,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
