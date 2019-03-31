@@ -20,6 +20,8 @@ feature:
       image: /img/raven-love-52.jpg
     - title: Raven Love 255
       image: /img/raven-love-255.jpg
+    - title: Raven Love 250
+      image: /img/img_0250.jpg
 mainpitch:
   title: Why Kaldi
   description: >
