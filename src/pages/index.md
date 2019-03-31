@@ -24,6 +24,10 @@ feature:
       image: /img/img_0250.jpg
     - title: Kekahe
       image: /img/img_3102.jpg
+    - title: Image 614
+      image: /img/img_0614.jpg
+    - title: Blacklight 12
+      image: /img/mural-blacklight12.jpg
 mainpitch:
   title: Why Kaldi
   description: >
