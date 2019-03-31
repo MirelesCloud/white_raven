@@ -12,12 +12,12 @@ feature:
       image: /img/raven-love-213.jpg
     - title: Bird Mural
       image: /img/mural-birds-detail11.jpg
+    - title: Elephant Mural
+      image: /img/raven-love-52.jpg
     - title: Mural
       image: /img/mural-icon11.jpg
     - title: Mural
       image: /img/raven-love-162.jpg
-    - title: Elephant Mural
-      image: /img/raven-love-52.jpg
     - title: Raven Love 255
       image: /img/raven-love-255.jpg
     - title: Raven Love 250
