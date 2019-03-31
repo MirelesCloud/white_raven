@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-
 import BlogRoll from '../components/BlogRoll'
 import FeatureImages from '../components/FeatureImages'
 
@@ -37,16 +36,16 @@ export const IndexPageTemplate = ({
     <section className="section">
       <div className="container has-text-centered">
         <p className="title is-1">Portfolio</p>
-          <p class="subtitle is-3">Subtitle 3</p>
+        <p class="subtitle is-3">Subtitle 3</p>
+      </div>
+    </section>
+    <section>
+      <div className="container has-text-centered">
+        <FeatureImages gridItems={feature.gallery} />
+      </div>
+    </section>
 
-      </div>
-    </section>
-    <section className="section section--gradient">
-      <div className="container">
-        <FeatureImages gridItems={intro.blurbs} />
-      </div>
-    </section>
-    <section className="section section--gradient">
+    <section className="section">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -98,8 +97,6 @@ export const IndexPageTemplate = ({
           marginRight: "75px",
           marginLeft: "75px",
           backgroundColor: "#333",
-
-
         }}/>
     </div>
   </div>
