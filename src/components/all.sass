@@ -29,6 +29,22 @@ $body-background-color: #1a001a
     margin-bottom: 1.5rem
     margin-top: 0
 
+//Image Gallery
+
+.image-frame
+  border: 5px solid #000
+  border-radius: 4px
+  padding: 10px
+  background-color: #fff
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+
+.image-frame:hover
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+  transform: scale(1.02)
+
+
+
+
 // Helper Classes
 .full-width-image-container
   width: 100vw
@@ -113,5 +129,7 @@ $menu-label-color: $white-ter
     height: 1em
     vertical-align: middle
     display: inline
+
+
 
 @import "~bulma"

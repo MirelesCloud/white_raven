@@ -1,9 +1,10 @@
 ---
 templateKey: index-page
 title: White Raven Creations
-image: /img/mural-birds-detail11-large.jpg
+image: /img/img_0614-large.jpg
 heading: White Raven Creations
 subheading: Fine Art That Speaks to the Heart
+background: /img/samuel-zeller-722382-unsplash.jpg
 feature:
   heading: Angel
   description: Angel Mural
@@ -74,4 +75,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-

@@ -9,6 +9,7 @@ import FeatureImages from '../components/FeatureImages'
 export const IndexPageTemplate = ({
   image,
   title,
+  background,
   feature,
   heading,
   subheading,
@@ -38,11 +39,23 @@ export const IndexPageTemplate = ({
         <p className="title is-1">Portfolio</p>
         <p class="subtitle is-3">Subtitle 3</p>
       </div>
-    </section>
-    <section>
-      <div className="container has-text-centered">
-        <FeatureImages gridItems={feature.gallery} />
+      <div>
+        <hr style={{
+            marginRight: "75px",
+            marginLeft: "75px",
+            backgroundColor: "#333",
+          }}/>
       </div>
+    </section>
+    <section className="section" style={{
+      backgroundImage: `url(${
+        !!background.childImageSharp ? background.childImageSharp.fluid.src : image
+      })`,
+      backgroundPosition: `center`,
+      backgroundAttachment: `fixed`,
+    
+    }}>
+      <FeatureImages gridItems={feature.gallery} />
     </section>
 
     <section className="section">
@@ -122,6 +135,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        background={frontmatter.background}
         feature={frontmatter.feature}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -152,6 +166,13 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        background {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }

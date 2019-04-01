@@ -18,9 +18,15 @@ const FeatureImages = ({ gridItems }) => (
     >
       {gridItems.map(item => (
         <div key={item.text} className="column is-4 is-half-tablet is-full-mobile">
-            <figure className="image">
-              <PreviewCompatibleImage imageInfo={item} />
-            </figure>
+          <div className="image-frame">
+            <div className="mat">
+              <figure className="image">
+                <PreviewCompatibleImage imageInfo={item} />
+              </figure>
+            </div>
+
+          </div>
+
         </div>
       ))}
   </Masonry>
