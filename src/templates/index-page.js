@@ -34,10 +34,12 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section">
-      <div className="container has-text-centered">
-        <p className="title is-1">Portfolio</p>
-        <p class="subtitle is-3">Subtitle 3</p>
+    <section className="hero is-medium">
+      <div className="hero-body has-text-centered">
+        <div className="container">
+          <h1 className="title is-1">Portfolio</h1>
+          <h2 class="subtitle is-2 ">Subtitle</h2>
+        </div>
       </div>
       <div>
         <hr style={{
@@ -53,11 +55,10 @@ export const IndexPageTemplate = ({
       })`,
       backgroundPosition: `center`,
       backgroundAttachment: `fixed`,
-    
+
     }}>
       <FeatureImages gridItems={feature.gallery} />
     </section>
-
     <section className="section">
       <div className="container">
         <div className="section">
