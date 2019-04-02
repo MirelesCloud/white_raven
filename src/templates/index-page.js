@@ -2,10 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
+import styled from 'styled-components'
+
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import FeatureImages from '../components/FeatureImages'
 
+const Title = styled.h1`
+  color: #cccccc;
+  font-weight: 200;
+  font-size: 4rem;
+  text-transform: uppercase;
+`
+const SubTitle = styled.h1`
+  color: #cccccc;
+  font-weight 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+`
 export const IndexPageTemplate = ({
   image,
   title,
@@ -29,8 +43,9 @@ export const IndexPageTemplate = ({
     }}
     >
       <div class="hero-body">
-        <div class="container">
+        <div class="container has-text-centered">
           <p class="title">
+            yo
           </p>
         </div>
       </div>
@@ -38,8 +53,8 @@ export const IndexPageTemplate = ({
     <section className="hero is-medium">
       <div className="hero-body has-text-centered">
         <div className="container">
-          <h1 className="title is-1">{heading}</h1>
-          <h3 className="subtitle">Fine art that speaks to the heart</h3>
+          <Title>{heading}</Title>
+          <SubTitle>Fine art that speaks to the heart</SubTitle>
         </div>
       </div>
       <div>

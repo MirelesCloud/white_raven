@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import logo from "../img/logo.svg";
 
-
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +37,9 @@ const Navbar = class extends React.Component {
         className="navbar is-primary is-fixed-top"
         role="navigation"
         aria-label="main-navigation"
-        
+        style={{
+          borderBottom: `#cccccc solid 1px`
+        }}
       >
         <div className="container">
           <div className="navbar-brand">
