@@ -3,7 +3,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Masonry from 'react-masonry-component'
 
 const masonryOptions = {
-    transitionDuration: 0
+    transitionDuration: 4
 };
 
 const imagesLoadedOptions = { background: '.has-background-grey' }

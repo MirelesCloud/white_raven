@@ -25,6 +25,7 @@ export const IndexPageTemplate = ({
       })`,
       backgroundPosition: `center`,
       backgroundAttachment: `fixed`,
+      repeat: `no-repeat`
     }}
     >
       <div class="hero-body">
@@ -37,8 +38,8 @@ export const IndexPageTemplate = ({
     <section className="hero is-medium">
       <div className="hero-body has-text-centered">
         <div className="container">
-          <h1 className="title is-1">Portfolio</h1>
-          <h2 class="subtitle is-2 ">Subtitle</h2>
+          <h1 className="title is-1">{heading}</h1>
+          <h3 className="subtitle">Fine art that speaks to the heart</h3>
         </div>
       </div>
       <div>
