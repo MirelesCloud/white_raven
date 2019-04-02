@@ -9,13 +9,13 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-    
+
       <div>
         {posts &&
           posts.map(({ node: post}) => (
-            <div className="columns" key={post.id}>
-              <div className="column">
-                <article className="box notification">
+            <div className="columns is-gapless is-multiline is-mobile" key={post.id} style={{display:"flex"}}>
+              <div className="column" style={{display:"flex", flexDirection:"column"}}>
+                <article className="box notification" style={{height:"100%"}}>
                   <p>
                     <Link
                       className="title has-text-primary is-size-4"
@@ -39,13 +39,12 @@ class BlogRoll extends React.Component {
                   </p>
                 </article>
               </div>
-              <div className="column">
-                <figure>
+              <div className="column" style={{display:"flex", flexDirection:"column"}}>
+                <figure style={{height:"100%"}}>
                   <Img fluid={post.frontmatter.image.childImageSharp.fluid}/>
                 </figure>
               </div>
             </div>
-
           ))}
       </div>
     )
