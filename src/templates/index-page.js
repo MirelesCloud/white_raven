@@ -20,6 +20,12 @@ const SubTitle = styled.h1`
   font-size: 2rem;
   text-transform: uppercase;
 `
+const Line = styled.hr`
+  background-color: #cccccc;
+  margin-left: 75px;
+  margin-right: 75px;
+  height: 1px;
+`
 export const IndexPageTemplate = ({
   image,
   title,
@@ -45,7 +51,6 @@ export const IndexPageTemplate = ({
       <div class="hero-body">
         <div class="container has-text-centered">
           <p class="title">
-            yo
           </p>
         </div>
       </div>
@@ -54,15 +59,10 @@ export const IndexPageTemplate = ({
       <div className="hero-body has-text-centered">
         <div className="container">
           <Title>{heading}</Title>
+          <Line/>
           <SubTitle>Fine art that speaks to the heart</SubTitle>
+
         </div>
-      </div>
-      <div>
-        <hr style={{
-            marginRight: "75px",
-            marginLeft: "75px",
-            backgroundColor: "#333",
-          }}/>
       </div>
     </section>
     <section className="section" style={{
@@ -74,6 +74,19 @@ export const IndexPageTemplate = ({
 
     }}>
       <FeatureImages gridItems={feature.gallery} />
+    </section>
+    <section className="section">
+      <div className="columns">
+        <div className="column is-12 has-text-centered">
+          <Title>Blog</Title>
+        </div>
+      </div>
+      <div className="columns">
+        <div className="column is-full has-text-centered">
+          <BlogRoll />
+        </div>
+      </div>
+
     </section>
     <section className="section">
       <div className="container">
@@ -105,11 +118,10 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    My latest
-                  </h3>
-                  <BlogRoll />
+                <div className="column is-12 has-text-centered">
+
+
+
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
@@ -123,11 +135,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <div>
-      <hr style={{
-          marginRight: "75px",
-          marginLeft: "75px",
-          backgroundColor: "#333",
-        }}/>
+      <Line/>
     </div>
   </div>
 )

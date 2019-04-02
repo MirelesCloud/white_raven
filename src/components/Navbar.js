@@ -38,7 +38,7 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
         style={{
-          borderBottom: `#cccccc solid 1px`
+          borderBottom: `#cccccc solid .01rem`
         }}
       >
         <div className="container">
