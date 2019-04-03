@@ -13,7 +13,9 @@ class BlogRoll extends React.Component {
             {posts &&
               posts.map(({ node: post}) => (
               <div className="column is-one-quarter-fullhd is-one-quarter-widescreen is-half-tablet is-full-mobile is-flex" key={post.id}>
-                <div className="card has-text-grey-lighter">
+                <div className="card has-text-grey-lighter" style={{
+                    border: "1px solid #fff"
+                  }}>
                   <div className="card-image">
                     <figure className="image">
                       <Img fluid={post.frontmatter.image.childImageSharp.fluid}/>
@@ -38,7 +40,7 @@ class BlogRoll extends React.Component {
                         {post.frontmatter.date}
                       </p>
                       <p className="has-text-centered">
-                        <Link className="button" to={post.fields.slug}>
+                        <Link className="btn" to={post.fields.slug}>
                           Keep Reading →
                         </Link>
                       </p>

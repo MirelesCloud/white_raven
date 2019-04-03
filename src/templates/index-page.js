@@ -77,14 +77,27 @@ export const IndexPageTemplate = ({
     </section>
     <section className="section">
       <div className="columns">
+        <div className="column is-10 is-offset-1">
+          <div className="tile">
+            <h1 className="title">{mainpitch.title}</h1>
+          </div>
+          <div className="tile">
+            <h3 className="subtitle">{mainpitch.description}</h3>
+          </div>
+        </div>
+      </div>
+      <Line/>
+      <div className="columns">
         <div className="column is-12 has-text-centered" style={{
             paddingBottom: `40px`
           }}>
           <Title>Blog</Title>
-          <Line/>
+
         </div>
       </div>
-      <div className="columns is-12 has-text-centered">
+      <div className="columns is-12 has-text-centered" style={{
+          marginBottom: `40px`
+        }}>
         <div className="column is-full has-text-centered">
           <BlogRoll />
         </div>
@@ -127,12 +140,6 @@ export const IndexPageTemplate = ({
                       See all art
                     </Link>
                   </div>
-                </div>
-                <div className="column is-12 has-text-centered">
-
-
-
-
                 </div>
               </div>
             </div>
