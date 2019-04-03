@@ -9,10 +9,23 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import FeatureImages from '../components/FeatureImages'
 
-const ShowPiece = styled.figure`
-  max-width: 600px;
-  height: auto;
-  margin: auto;
+const Frame = styled.div`
+  position: relative;
+  width: 100%;
+  padding-bottom: 82.5%;
+  background: black;
+  box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
+`
+const FrameInner = styled.div`
+  position: absolute;
+  background: white;
+  top: 3.0303%; bottom: 3.0303%; left: 2.5%; right: 2.5%;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+`
+const Art = styled.figure`
+  position: absolute;
+  top: 16.129%; bottom: 16.129%; left: 13.158%; right: 13.158%;
+
 `
 
 const Title = styled.h1`
@@ -70,10 +83,13 @@ export const IndexPageTemplate = ({
     >
       <div className="hero-body">
         <div className="container">
-          <ShowPiece className="image ">
-            <Img fluid={image.childImageSharp.fluid}/>
-          </ShowPiece>
-
+          <Frame>
+            <FrameInner>
+              <Art>
+                <Img className="image" fluid={image.childImageSharp.fluid} />
+              </Art>
+            </FrameInner>
+          </Frame>
         </div>
       </div>
     </section>
