@@ -1,12 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import FeatureImages from '../components/FeatureImages'
+
+const ShowPiece = styled.figure`
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+`
 
 const Title = styled.h1`
   color: #cccccc;
@@ -26,6 +33,19 @@ const Line = styled.hr`
   margin-right: 75px;
   height: 1px;
 `
+
+const Breadcrumbs = () => (
+  <nav class="breadcrumb has-dot-separator is-medium is-centered has-text-white is-size-5-mobile" aria-label="breadcrumbs">
+    <br/>
+    <ul className="is-uppercase">
+      <li><Link to="/"><span className="has-text-grey-lighter">Murals</span></Link></li>
+      <li><Link to="/"><span className="has-text-grey-lighter">Pottery</span></Link></li>
+      <li><Link to="/"><span className="has-text-grey-lighter">Leis</span></Link></li>
+      <li><Link to="/"><span className="has-text-grey-lighter">Cakes</span></Link></li>
+    </ul>
+  </nav>
+)
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -41,7 +61,7 @@ export const IndexPageTemplate = ({
   <div>
     <section className="hero is-fullheight-with-navbar" style={{
       backgroundImage: `url(${
-        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        !!background.childImageSharp ? background.childImageSharp.fluid.src : image
       })`,
       backgroundPosition: `center`,
       backgroundAttachment: `fixed`,
@@ -49,9 +69,11 @@ export const IndexPageTemplate = ({
     }}
     >
       <div className="hero-body">
-        <div className="container has-text-centered">
-          <p className="title">
-          </p>
+        <div className="container">
+          <ShowPiece className="image ">
+            <Img fluid={image.childImageSharp.fluid}/>
+          </ShowPiece>
+
         </div>
       </div>
     </section>
@@ -61,15 +83,7 @@ export const IndexPageTemplate = ({
           <Title>{heading}</Title>
           <Line/>
           <SubTitle>Fine art that speaks to the heart</SubTitle>
-            <nav class="breadcrumb has-dot-separator is-medium is-centered has-text-white" aria-label="breadcrumbs">
-              <br/>
-              <ul className="has-text-white">
-                <li><Link to="/"><span className="has-text-grey-lighter">Murals</span></Link></li>
-                <li><Link to="/"><span className="has-text-grey-lighter">Pottery</span></Link></li>
-                <li><Link to="/"><span className="has-text-grey-lighter">Leis</span></Link></li>
-                <li><Link to="/"><span className="has-text-grey-lighter">Cakes</span></Link></li>
-              </ul>
-            </nav>
+            <Breadcrumbs/>
         </div>
       </div>
     </section>
@@ -87,26 +101,23 @@ export const IndexPageTemplate = ({
       <div className="columns">
         <div className="column is-10 is-offset-1">
           <div className="tile">
-            <h1 className="title">{mainpitch.title}</h1>
-          </div>
-          <div className="tile">
-            <h3 className="subtitle">{mainpitch.description}</h3>
-
-
+            <h1 className="title has-text-grey-lighter has-text-weight-light">{mainpitch.title}</h1>
           </div>
           <br/>
+          <div className="tile">
+            <h3 className="subtitle has-text-grey-lighter">{mainpitch.description}</h3>
+          </div>
+          <br/>
+          <div>
+            <Line/>
+            <Breadcrumbs/>
+            <Line/>
+          </div>
 
         </div>
       </div>
       <div className="container">
-        <nav class="breadcrumb has-dot-separator is-medium is-centered" aria-label="breadcrumbs">
-          <ul>
-            <li><Link to="/">Murals</Link></li>
-            <li><Link to="/">Pottery</Link></li>
-            <li><Link to="/">Leis</Link></li>
-            <li><Link to="/">Cakes</Link></li>
-          </ul>
-        </nav>
+
       </div>
       <div className="columns">
         <div className="column is-12 has-text-centered" style={{
@@ -115,7 +126,6 @@ export const IndexPageTemplate = ({
           <Title>Blog</Title>
         </div>
       </div>
-
       <div className="columns is-12 has-text-centered" style={{
           marginBottom: `40px`
         }}>
