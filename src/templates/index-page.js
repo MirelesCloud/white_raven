@@ -12,7 +12,7 @@ import FeatureImages from '../components/FeatureImages'
 const Frame = styled.div`
   position: relative;
   width: 100%;
-  padding-bottom: 82.5%;
+  padding-bottom: 100%;
   background: black;
   box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
 
@@ -25,8 +25,7 @@ const FrameInner = styled.div`
 `
 const Art = styled.figure`
   position: absolute;
-  top: 5%; bottom:5%; left: 13.158%; right: 13.158%;
-
+  top: 12%; bottom:12%; left: 13.158%; right: 13.158%;
 `
 
 const Title = styled.h1`
@@ -86,8 +85,10 @@ export const IndexPageTemplate = ({
         <div className="container">
           <Frame>
             <FrameInner>
-              <Art>
-                <Img fluid={image.childImageSharp.fluid} style={{width:"100%"}}/>
+              <Art className="art">
+                <Img className="image" fluid={image.childImageSharp.fluid} style={{
+                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,0.5)`
+                  }}/>
               </Art>
             </FrameInner>
           </Frame>
