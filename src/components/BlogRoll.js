@@ -11,41 +11,47 @@ class BlogRoll extends React.Component {
     return (
 
       <div>
-        {posts &&
-          posts.map(({ node: post}) => (
-            <div className="columns is-gapless is-multiline is-mobile" key={post.id} style={{display:"flex"}}>
-              <div className="column" style={{display:"flex", flexDirection:"column"}}>
-                <article className="box notification" style={{height:"100%"}}>
-                  <p>
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                  <p>
 
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </article>
+
+          <div className="columns is-multiline is-mobile" >
+            {posts &&
+              posts.map(({ node: post}) => (
+              <div className="column is-one-quarter-fullhd is-one-quarter-widescreen is-half-tablet is-full-mobile" key={post.id}>
+                <div className="card">
+                  <div className="card-image">
+                    <figure className="image">
+                      <Img fluid={post.frontmatter.image.childImageSharp.fluid}/>
+                    </figure>
+                  </div>
+                  <div className="card-content">
+                    <article className="box notification">
+                      <p>
+                        <Link
+                          className="title has-text-primary is-size-4"
+                          to={post.fields.slug}
+                        >
+                          {post.frontmatter.title}
+                        </Link>
+                        <span> &bull; </span>
+                        <span className="subtitle is-size-5 is-block">
+                          {post.frontmatter.date}
+                        </span>
+                      </p>
+                      <p>
+                        {post.excerpt}
+                        <br />
+                        <br />
+                        <Link className="button" to={post.fields.slug}>
+                          Keep Reading →
+                        </Link>
+                      </p>
+                    </article>
+                  </div>
+                </div>
               </div>
-              <div className="column" style={{display:"flex", flexDirection:"column"}}>
-                <figure style={{height:"100%"}}>
-                  <Img fluid={post.frontmatter.image.childImageSharp.fluid}/>
-                </figure>
-              </div>
+              ))}
             </div>
-          ))}
+
       </div>
     )
   }
@@ -69,7 +75,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 200)
               id
               fields {
                 slug
