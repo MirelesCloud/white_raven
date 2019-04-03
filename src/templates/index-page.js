@@ -15,6 +15,7 @@ const Frame = styled.div`
   padding-bottom: 82.5%;
   background: black;
   box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
+
 `
 const FrameInner = styled.div`
   position: absolute;
@@ -24,7 +25,7 @@ const FrameInner = styled.div`
 `
 const Art = styled.figure`
   position: absolute;
-  top: 16.129%; bottom: 16.129%; left: 13.158%; right: 13.158%;
+  top: 5%; bottom:5%; left: 13.158%; right: 13.158%;
 
 `
 
@@ -86,7 +87,7 @@ export const IndexPageTemplate = ({
           <Frame>
             <FrameInner>
               <Art>
-                <Img className="image" fluid={image.childImageSharp.fluid} />
+                <Img fluid={image.childImageSharp.fluid} style={{width:"100%"}}/>
               </Art>
             </FrameInner>
           </Frame>
