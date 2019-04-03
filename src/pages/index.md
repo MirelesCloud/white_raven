@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: White Raven Creations
-image: /img/img_0614-large.jpg
+image: /img/mural-blacklight12.jpg
 heading: White Raven Creations
 subheading: Fine Art That Speaks to the Heart
 background: /img/dominik-scythe-152888-unsplash.jpg
@@ -30,12 +30,9 @@ feature:
     - title: Blacklight 12
       image: /img/mural-blacklight12.jpg
 mainpitch:
-  title: Why Kaldi
+  title: About White Raven's Creations
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,

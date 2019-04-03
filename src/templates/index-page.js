@@ -39,18 +39,18 @@ export const IndexPageTemplate = ({
   main,
 }) => (
   <div>
-    <section class="hero is-fullheight-with-navbar" style={{
+    <section className="hero is-fullheight-with-navbar" style={{
       backgroundImage: `url(${
         !!image.childImageSharp ? image.childImageSharp.fluid.src : image
       })`,
       backgroundPosition: `center`,
       backgroundAttachment: `fixed`,
-      repeat: `no-repeat`
+      repeat: `no-repeat`,
     }}
     >
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <p className="title">
           </p>
         </div>
       </div>
@@ -61,7 +61,15 @@ export const IndexPageTemplate = ({
           <Title>{heading}</Title>
           <Line/>
           <SubTitle>Fine art that speaks to the heart</SubTitle>
-
+            <nav class="breadcrumb has-dot-separator is-medium is-centered has-text-white" aria-label="breadcrumbs">
+              <br/>
+              <ul className="has-text-white">
+                <li><Link to="/"><span className="has-text-grey-lighter">Murals</span></Link></li>
+                <li><Link to="/"><span className="has-text-grey-lighter">Pottery</span></Link></li>
+                <li><Link to="/"><span className="has-text-grey-lighter">Leis</span></Link></li>
+                <li><Link to="/"><span className="has-text-grey-lighter">Cakes</span></Link></li>
+              </ul>
+            </nav>
         </div>
       </div>
     </section>
@@ -83,18 +91,31 @@ export const IndexPageTemplate = ({
           </div>
           <div className="tile">
             <h3 className="subtitle">{mainpitch.description}</h3>
+
+
           </div>
+          <br/>
+
         </div>
       </div>
-      <Line/>
+      <div className="container">
+        <nav class="breadcrumb has-dot-separator is-medium is-centered" aria-label="breadcrumbs">
+          <ul>
+            <li><Link to="/">Murals</Link></li>
+            <li><Link to="/">Pottery</Link></li>
+            <li><Link to="/">Leis</Link></li>
+            <li><Link to="/">Cakes</Link></li>
+          </ul>
+        </nav>
+      </div>
       <div className="columns">
         <div className="column is-12 has-text-centered" style={{
             paddingBottom: `40px`
           }}>
           <Title>Blog</Title>
-
         </div>
       </div>
+
       <div className="columns is-12 has-text-centered" style={{
           marginBottom: `40px`
         }}>
@@ -109,40 +130,19 @@ export const IndexPageTemplate = ({
           </Link>
         </div>
       </div>
-
     </section>
     <section className="section">
       <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all art
-                    </Link>
-                  </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+              <div className="columns">
+                <div className="column is-12">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    {heading}
+                  </h3>
+                  <p>{description}</p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>

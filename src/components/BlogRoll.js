@@ -41,7 +41,7 @@ class BlogRoll extends React.Component {
                       </p>
                       <p className="has-text-centered">
                         <Link className="btn" to={post.fields.slug}>
-                          Keep Reading →
+                          Keep Reading >
                         </Link>
                       </p>
                     </article>
