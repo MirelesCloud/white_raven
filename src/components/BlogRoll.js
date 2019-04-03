@@ -9,38 +9,35 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-
-      <div>
-
-
-          <div className="columns is-multiline is-mobile" >
+          <div className="columns is-multiline is-mobile is-1">
             {posts &&
               posts.map(({ node: post}) => (
-              <div className="column is-one-quarter-fullhd is-one-quarter-widescreen is-half-tablet is-full-mobile" key={post.id}>
-                <div className="card">
+              <div className="column is-one-quarter-fullhd is-one-quarter-widescreen is-half-tablet is-full-mobile is-flex" key={post.id}>
+                <div className="card has-text-grey-lighter">
                   <div className="card-image">
                     <figure className="image">
                       <Img fluid={post.frontmatter.image.childImageSharp.fluid}/>
                     </figure>
                   </div>
                   <div className="card-content">
-                    <article className="box notification">
+                    <article className="">
                       <p>
                         <Link
-                          className="title has-text-primary is-size-4"
+                          className="title has-text-weight-light is-size-4 has-text-grey-lighter"
                           to={post.fields.slug}
                         >
                           {post.frontmatter.title}
                         </Link>
-                        <span> &bull; </span>
-                        <span className="subtitle is-size-5 is-block">
-                          {post.frontmatter.date}
-                        </span>
                       </p>
-                      <p>
+                      <p className="has-text-justified">
                         {post.excerpt}
                         <br />
                         <br />
+                      </p>
+                      <p className="subtitle is-size-6 has-text-right has-text-grey-lighter">
+                        {post.frontmatter.date}
+                      </p>
+                      <p className="has-text-centered">
                         <Link className="button" to={post.fields.slug}>
                           Keep Reading →
                         </Link>
@@ -51,8 +48,6 @@ class BlogRoll extends React.Component {
               </div>
               ))}
             </div>
-
-      </div>
     )
   }
 }

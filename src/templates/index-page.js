@@ -77,13 +77,23 @@ export const IndexPageTemplate = ({
     </section>
     <section className="section">
       <div className="columns">
-        <div className="column is-12 has-text-centered">
+        <div className="column is-12 has-text-centered" style={{
+            paddingBottom: `40px`
+          }}>
           <Title>Blog</Title>
+          <Line/>
         </div>
       </div>
-      <div className="columns">
+      <div className="columns is-12 has-text-centered">
         <div className="column is-full has-text-centered">
           <BlogRoll />
+        </div>
+      </div>
+      <div className="columns is-12 has-text-centered">
+        <div className="column">
+          <Link className="btn" to="/blog">
+            Read more
+          </Link>
         </div>
       </div>
 
@@ -122,11 +132,7 @@ export const IndexPageTemplate = ({
 
 
 
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
+
                 </div>
               </div>
             </div>
