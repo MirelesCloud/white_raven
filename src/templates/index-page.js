@@ -77,14 +77,25 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="hero is-medium">
-      <div className="hero-body has-text-centered">
-        <div className="container">
-          <Title>{heading}</Title>
-          <Line/>
-          <SubTitle>{subheading}</SubTitle>
-            <Breadcrumbs/>
-        </div>
+    <section className="section">
+      <div className="container has-text-justified">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="tile">
+                <h1 className="title has-text-grey-lighter has-text-weight-light">{mainpitch.title}</h1>
+              </div>
+              <br/>
+              <div className="tile">
+                <h3 className="subtitle has-text-grey-lighter">{mainpitch.description}</h3>
+              </div>
+              <br/>
+              <div>
+
+                <Breadcrumbs/>
+                <Line/>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
     <section className="section" style={{
@@ -98,32 +109,15 @@ export const IndexPageTemplate = ({
       <FeatureImages gridItems={feature.gallery} />
     </section>
     <section className="section">
-      <div className="columns">
-        <div className="column is-10 is-offset-1">
-          <div className="tile">
-            <h1 className="title has-text-grey-lighter has-text-weight-light">{mainpitch.title}</h1>
-          </div>
-          <br/>
-          <div className="tile">
-            <h3 className="subtitle has-text-grey-lighter">{mainpitch.description}</h3>
-          </div>
-          <br/>
-          <div>
-            <Line/>
-            <Breadcrumbs/>
-            <Line/>
-          </div>
 
-        </div>
-      </div>
-      <div className="container">
 
-      </div>
       <div className="columns">
         <div className="column is-12 has-text-centered" style={{
             paddingBottom: `40px`
           }}>
+          <Line/>
           <Title>Blog</Title>
+          <Line/>
         </div>
       </div>
       <div className="columns is-12 has-text-centered" style={{
@@ -146,11 +140,13 @@ export const IndexPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
               <div className="columns">
-                <div className="column is-12">
+                <div className="column is-6">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
+                    About White Raven
                   </h3>
                   <p>{description}</p>
+                </div>
+                <div className="column is-6">
                 </div>
               </div>
           </div>
