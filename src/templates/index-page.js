@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import logo from "../img/logo.svg"
 
 import styled from 'styled-components'
 
@@ -9,23 +9,10 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import FeatureImages from '../components/FeatureImages'
 
-const Frame = styled.div`
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  background: black;
-  box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
-
-`
-const FrameInner = styled.div`
-  position: absolute;
-  background: white;
-  top: 3.0303%; bottom: 3.0303%; left: 2.5%; right: 2.5%;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
-`
-const Art = styled.figure`
-  position: absolute;
-  top: 12%; bottom:12%; left: 13.158%; right: 13.158%;
+const Logo = styled.figure`
+  width: 200px;
+  height: auto;
+  margin: auto;
 `
 
 const Title = styled.h1`
@@ -34,11 +21,9 @@ const Title = styled.h1`
   font-size: 4rem;
   text-transform: uppercase;
 `
-const SubTitle = styled.h1`
-  color: #cccccc;
+const SubTitle = styled(Title)`
   font-weight 100;
   font-size: 2rem;
-  text-transform: uppercase;
 `
 const Line = styled.hr`
   background-color: #cccccc;
@@ -81,17 +66,14 @@ export const IndexPageTemplate = ({
       repeat: `no-repeat`,
     }}
     >
-      <div className="hero-body">
-        <div className="container">
-          <Frame>
-            <FrameInner>
-              <Art className="art">
-                <Img className="image" fluid={image.childImageSharp.fluid} style={{
-                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,0.5)`
-                  }}/>
-              </Art>
-            </FrameInner>
-          </Frame>
+      <div className="hero-body is-primary has-text-centered ">
+        <div className="container ">
+          <Logo>
+            <img src={logo} alt="White Raven Logo"/>
+          </Logo>
+          <Title>{heading}</Title>
+          <Line/>
+          <SubTitle>{subheading}</SubTitle>
         </div>
       </div>
     </section>
@@ -100,7 +82,7 @@ export const IndexPageTemplate = ({
         <div className="container">
           <Title>{heading}</Title>
           <Line/>
-          <SubTitle>Fine art that speaks to the heart</SubTitle>
+          <SubTitle>{subheading}</SubTitle>
             <Breadcrumbs/>
         </div>
       </div>
