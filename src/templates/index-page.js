@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
+import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
 
 const Logo = styled.figure`
@@ -135,24 +136,9 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-              <div className="columns">
-                <div className="column is-6">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    About White Raven
-                  </h3>
-                  <p>{description}</p>
-                </div>
-                <div className="column is-6">
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Line/>
+    <AboutRoll/>
+
     <div>
       <Line/>
     </div>
