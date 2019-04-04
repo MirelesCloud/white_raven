@@ -9,8 +9,6 @@ class AboutRoll extends React.Component {
     const { data } = this.props
     const { frontmatter } = data.markdownRemark
 
-
-    console.log(this.props)
     return (
       <section className="section">
         <div className="container">

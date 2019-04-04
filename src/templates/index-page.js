@@ -34,7 +34,7 @@ const Line = styled.hr`
 `
 
 const Breadcrumbs = () => (
-  <nav class="breadcrumb has-dot-separator is-medium is-centered has-text-white is-size-5-mobile" aria-label="breadcrumbs">
+  <nav class="breadcrumb has-dot-separator is-centered has-text-white" aria-label="breadcrumbs">
     <br/>
     <ul className="is-uppercase">
       <li><Link to="/"><span className="has-text-grey-lighter">Murals</span></Link></li>
@@ -87,7 +87,7 @@ export const IndexPageTemplate = ({
               </div>
               <br/>
               <div className="tile">
-                <h3 className="subtitle has-text-grey-lighter">{mainpitch.description}</h3>
+                <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{mainpitch.description}</h3>
               </div>
               <br/>
               <div>

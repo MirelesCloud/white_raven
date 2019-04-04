@@ -30,7 +30,7 @@ feature:
     - title: Blacklight 12
       image: /img/mural-blacklight12.jpg
 mainpitch:
-  title: Aloha and Welcome to White Raven Creations
+  title: Aloha...
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 description: >-
