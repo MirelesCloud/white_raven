@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import ScrollAnimation from 'react-animate-on-scroll'
 import logo from "../img/logo.svg"
+import arrow from "../img/arrow.svg"
 
 import styled from 'styled-components'
 
@@ -11,7 +13,15 @@ import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
 
 const Logo = styled.figure`
+position: relative;
   width: 200px;
+  height: auto;
+  margin: auto;
+`
+
+const Arrow = styled.figure`
+  position: relative;
+  width: 50px;
   height: auto;
   margin: auto;
 `
@@ -40,7 +50,7 @@ const Breadcrumbs = () => (
       <li><Link to="/"><span className="has-text-grey-lighter">Murals</span></Link></li>
       <li><Link to="/"><span className="has-text-grey-lighter">Pottery</span></Link></li>
       <li><Link to="/"><span className="has-text-grey-lighter">Leis</span></Link></li>
-      <li><Link to="/"><span className="has-text-grey-lighter">Cakes</span></Link></li>
+      <li><Link to="/"><span className="has-text-grey-lighter">Commissions</span></Link></li>
     </ul>
   </nav>
 )
@@ -77,8 +87,19 @@ export const IndexPageTemplate = ({
           <SubTitle>{subheading}</SubTitle>
         </div>
       </div>
+       <div style={{marginBottom:"100px"}}>
+          <Arrow>
+            <ScrollAnimation animateIn='fadeIn'
+              animateOut='fadeOut'
+              delay={1000}
+
+              >
+              <a href="#section"><img src={arrow} alt="arrow down"/></a>
+            </ScrollAnimation>
+          </Arrow>
+       </div>
     </section>
-    <section className="section">
+    <section className="section" id="section">
       <div className="container has-text-justified">
           <div className="columns">
             <div className="column is-10 is-offset-1">
@@ -91,7 +112,6 @@ export const IndexPageTemplate = ({
               </div>
               <br/>
               <div>
-
                 <Breadcrumbs/>
                 <Line/>
               </div>
@@ -138,7 +158,6 @@ export const IndexPageTemplate = ({
     </section>
     <Line/>
     <AboutRoll/>
-
     <div>
       <Line/>
     </div>
