@@ -43,14 +43,21 @@ const Line = styled.hr`
   height: 1px;
 `
 
+const Button = styled.span`
+  color: #cccccc;
+  :hover {
+    color: green;
+  }
+`
+
 const Breadcrumbs = () => (
   <nav class="breadcrumb has-dot-separator is-centered has-text-white" aria-label="breadcrumbs">
     <br/>
     <ul className="is-uppercase">
-      <li><Link to="/"><span className="has-text-grey-lighter">Murals</span></Link></li>
-      <li><Link to="/"><span className="has-text-grey-lighter">Pottery</span></Link></li>
-      <li><Link to="/"><span className="has-text-grey-lighter">Leis</span></Link></li>
-      <li><Link to="/"><span className="has-text-grey-lighter">Commissions</span></Link></li>
+      <li><Link to="/"><Button >Murals</Button></Link></li>
+      <li><Link to="/"><Button>Pottery</Button></Link></li>
+      <li><Link to="/"><Button>Leis</Button></Link></li>
+      <li><Link to="/"><Button>Commissions</Button></Link></li>
     </ul>
   </nav>
 )
@@ -89,10 +96,9 @@ export const IndexPageTemplate = ({
       </div>
        <div style={{marginBottom:"100px"}}>
           <Arrow>
-            <ScrollAnimation animateIn='fadeIn'
-              animateOut='fadeOut'
-              delay={1000}
+            <ScrollAnimation animateIn='bounce'
 
+              delay={1000}
               >
               <a href="#section"><img src={arrow} alt="arrow down"/></a>
             </ScrollAnimation>

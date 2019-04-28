@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 title: White Raven Creations
-image: /img/mural-blacklight12.jpg
+image: /img/dominik-scythe-152888-unsplash.jpg
 heading: White Raven Creations
-subheading: Art That Speaks to the Heart
+subheading: Art that inspires the Heart
 background: /img/dominik-scythe-152888-unsplash.jpg
 feature:
   heading: Angel
