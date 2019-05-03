@@ -6,6 +6,11 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Masonry from 'react-masonry-component'
+
+const masonryOptions = {
+    transitionDuration: 4
+};
 
 export const MuralsPageTemplate = ({
   image,
@@ -46,6 +51,15 @@ export const MuralsPageTemplate = ({
                   {title}
                 </h2>
               </div>
+              <div className="columns">
+                <div className="column is-4">
+                  <h1 className="has-text-light">Yo</h1>
+                  
+
+                </div>
+
+              </div>
+
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-2">

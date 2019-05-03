@@ -54,10 +54,10 @@ const Breadcrumbs = () => (
   <nav class="breadcrumb has-dot-separator is-centered has-text-white" aria-label="breadcrumbs">
     <br/>
     <ul className="is-uppercase">
-      <li><Link to="/"><Button >Murals</Button></Link></li>
-      <li><Link to="/"><Button>Wood Art</Button></Link></li>
-      <li><Link to="/"><Button>Leis</Button></Link></li>
-      <li><Link to="/"><Button>Commissions</Button></Link></li>
+      <li><Link to="/murals"><Button >Murals</Button></Link></li>
+      <li><Link to="/wood-art"><Button>Wood Art</Button></Link></li>
+      <li><Link to="/leis"><Button>Leis</Button></Link></li>
+      <li><Link to="/comissions"><Button>Commissions</Button></Link></li>
     </ul>
   </nav>
 )
@@ -97,7 +97,6 @@ export const IndexPageTemplate = ({
        <div style={{marginBottom:"100px"}}>
           <Arrow>
             <ScrollAnimation animateIn='bounce'
-
               delay={1000}
               >
               <a href="#section"><img src={arrow} alt="arrow down"/></a>
