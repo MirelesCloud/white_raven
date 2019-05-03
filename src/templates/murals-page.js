@@ -12,6 +12,8 @@ const masonryOptions = {
     transitionDuration: 4
 };
 
+const imagesLoadedOptions = { background: '.has-background-grey' }
+
 export const MuralsPageTemplate = ({
   image,
   title,
@@ -51,14 +53,24 @@ export const MuralsPageTemplate = ({
                   {title}
                 </h2>
               </div>
-              <div className="columns">
-                <div className="column is-4">
-                  <h1 className="has-text-light">Yo</h1>
-                  
+              <Masonry
+                className={'colums is-multiline'}
+                options={masonryOptions}
+                disableImagesLoaded={false}
+                updateOnEachImageLoad={true}
+                imagesLoadedOptions={imagesLoadedOptions}
+                >
 
-                </div>
+                  <div className="column is-3">
+                    <div className="image-frame">
+                      <div className="art">
+                        <figure className="frame">
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
 
-              </div>
+              </Masonry>
 
               <div className="columns">
                 <div className="column is-7">
