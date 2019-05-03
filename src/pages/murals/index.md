@@ -2,7 +2,7 @@
 templateKey: 'murals-page'
 path: /murals
 title: Our Coffee
-image: /img/jumbotron.jpg
+image: /img/mural-icon11-large.jpg
 heading: Great coffee with a conscience
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
