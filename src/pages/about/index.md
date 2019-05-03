@@ -5,8 +5,8 @@ title: About White Raven
 image: /img/raven-love-121.jpg
 about:  Just a little about me....  
 heading: White Raven Creations
-subheading: Art that inspires the `Heart
+subheading: Art Inspired Through The Mystery
 background: /img/dominik-scythe-152888-unsplash.jpg
 ---
 ### Aloha
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…
+Through the many travels and journeys I have embarked upon, inspiration has brought me to this creative process. It is my intention that this site will give you access to my visionary artwork and bless your home or altar with its healing vibration.

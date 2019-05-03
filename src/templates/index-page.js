@@ -55,7 +55,7 @@ const Breadcrumbs = () => (
     <br/>
     <ul className="is-uppercase">
       <li><Link to="/"><Button >Murals</Button></Link></li>
-      <li><Link to="/"><Button>Pottery</Button></Link></li>
+      <li><Link to="/"><Button>Wood Art</Button></Link></li>
       <li><Link to="/"><Button>Leis</Button></Link></li>
       <li><Link to="/"><Button>Commissions</Button></Link></li>
     </ul>

@@ -3,7 +3,7 @@ templateKey: index-page
 title: White Raven Creations
 image: /img/dominik-scythe-152888-unsplash.jpg
 heading: White Raven Creations
-subheading: Art that inspires the Heart
+subheading: Art Inspired Through The Mystery
 background: /img/dominik-scythe-152888-unsplash.jpg
 feature:
   heading: Angel
