@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import MuralsImages from '../components/MuralImages'
+import BreadCrumbBar from '../components/Breadcrumbs'
 
 import styled from 'styled-components'
 
@@ -18,44 +19,68 @@ export const MuralsPageTemplate = ({
   title,
   murals,
 }) => (
-  <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url(${
-                    !!image.childImageSharp
-                      ? image.childImageSharp.fluid.src
-                      : image
-                  })`,
-                }}
-              >
-                <h2
-                  className="has-text-weight-bold is-size-1"
+  <div>
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
+                <div
+                  className="full-width-image-container margin-top-0"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
+                    backgroundImage: `url(${
+                      !!image.childImageSharp
+                        ? image.childImageSharp.fluid.src
+                        : image
+                    })`,
                   }}
                 >
-                  {title}
-                </h2>
+                  <h2
+                    className="has-text-weight-light is-size-1"
+                    style={{
+                      boxShadow: '0.5rem 0 0 #330033, -0.5rem 0 0 #330033',
+                      backgroundColor: 'rgba(51, 0, 51, 0.8)',
+                      color: 'white',
+                      padding: '1rem',
+
+                    }}
+                  >
+                    {title}
+                  </h2>
+                </div>
               </div>
-              <MuralsImages gridItems={murals}/>
-
             </div>
-
+          </div>
+        </div>
+      </div>
+    </section>
+    <div className="section">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="tile">
+              <h1 className="title has-text-grey-lighter has-text-weight-light">Murals Title</h1>
+            </div>
+            <br/>
+            <div className="tile">
+              <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">Murals description</h3>
+            </div>
+            <br/>
+            <div>
+              <BreadCrumbBar/>
+              <Line/>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div className="section">
+      <MuralsImages gridItems={murals}/>
+    </div>
     <Line/>
-  </section>
+  </div>
+
 )
 
 MuralsPageTemplate.propTypes = {

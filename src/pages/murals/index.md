@@ -1,7 +1,7 @@
 ---
 templateKey: 'murals-page'
 path: /murals
-title: Our Coffee
+title: Mural Art
 image: /img/mural-icon11-large.jpg
 murals:
   - title: Kekahe

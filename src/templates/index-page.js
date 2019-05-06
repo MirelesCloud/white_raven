@@ -11,6 +11,7 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
+import BreadCrumbBar from '../components/Breadcrumbs'
 
 const Logo = styled.figure`
 position: relative;
@@ -42,25 +43,6 @@ const Line = styled.hr`
   margin-right: 75px;
   height: 1px;
 `
-
-const Button = styled.span`
-  color: #cccccc;
-  :hover {
-    color: green;
-  }
-`
-
-const Breadcrumbs = () => (
-  <nav class="breadcrumb has-dot-separator is-centered has-text-white" aria-label="breadcrumbs">
-    <br/>
-    <ul className="is-uppercase">
-      <li><Link to="/murals"><Button >Murals</Button></Link></li>
-      <li><Link to="/wood-art"><Button>Wood Art</Button></Link></li>
-      <li><Link to="/leis"><Button>Leis</Button></Link></li>
-      <li><Link to="/comissions"><Button>Commissions</Button></Link></li>
-    </ul>
-  </nav>
-)
 
 export const IndexPageTemplate = ({
   image,
@@ -117,7 +99,7 @@ export const IndexPageTemplate = ({
               </div>
               <br/>
               <div>
-                <Breadcrumbs/>
+                <BreadCrumbBar/>
                 <Line/>
               </div>
             </div>

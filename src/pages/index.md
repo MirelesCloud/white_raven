@@ -32,5 +32,5 @@ feature:
 mainpitch:
   title: Aloha...
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    Through the many travels and journeys I have embarked upon, inspiration has brought me to this creative process. It is my intention that this site will give you access to my visionary artwork and bless your home or altar with its healing vibration.
 ---
