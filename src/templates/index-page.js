@@ -70,6 +70,9 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
+  description,
+  intro,
+  main,
 }) => (
   <div>
     <section className="hero is-fullheight-with-navbar" style={{
@@ -188,6 +191,11 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         background={frontmatter.background}
         feature={frontmatter.feature}
+        heading={frontmatter.heading}
+        subheading={frontmatter.subheading}
+        mainpitch={frontmatter.mainpitch}
+        description={frontmatter.description}
+        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -233,6 +241,27 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+        heading
+        subheading
+        mainpitch {
+          title
+          description
+        }
+        description
+        intro {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 500, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+          heading
+          description
         }
       }
     }

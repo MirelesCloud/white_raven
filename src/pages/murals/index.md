@@ -17,4 +17,12 @@ murals:
   - title: Mural
     image: /img/raven-love-162.jpg
   - title: Raven Love 255
+    image: /img/raven-love-255.jpg
+  - title: Raven Love 250
+    image: /img/img_0250.jpg
+  - title: Image 614
+    image: /img/img_0614.jpg
+  - title: Blacklight 12
+    image: /img/mural-blacklight12.jpg
+
 ---

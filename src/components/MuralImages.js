@@ -17,7 +17,7 @@ const MuralImages = ({ gridItems }) => (
     imagesLoadedOptions={imagesLoadedOptions}
     >
     {gridItems.map(item => (
-      <div key={item.text} className="column is-6 is-half-tablet is-full-mobile">
+      <div key={item.text} className="column is-4 is-half-tablet is-full-mobile">
         <div className="image-frame">
           <div className="art">
             <figure className="image">
