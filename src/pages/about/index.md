@@ -2,7 +2,7 @@
 templateKey: 'about-page'
 path: /about
 title: About White Raven
-image: /img/raven-love-121.jpg
+image: /img/Raven-2011.jpg
 about:  Just a little about me....  
 heading: White Raven Creations
 subheading: Art Inspired Through The Mystery

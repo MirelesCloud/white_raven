@@ -4,6 +4,15 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import MuralsImages from '../components/MuralImages'
 
+import styled from 'styled-components'
+
+const Line = styled.hr`
+  background-color: #cccccc;
+  margin-left: 75px;
+  margin-right: 75px;
+  height: 1px;
+`
+
 export const MuralsPageTemplate = ({
   image,
   title,
@@ -40,10 +49,12 @@ export const MuralsPageTemplate = ({
               <MuralsImages gridItems={murals}/>
 
             </div>
+
           </div>
         </div>
       </div>
     </div>
+    <Line/>
   </section>
 )
 
