@@ -63,10 +63,10 @@ collections:
       - file: "src/pages/murals/index.md"
         label: "Murals Page"
         name: "murals"
-        create: true
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "murals-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
+          - {label: Gallery, name: main, widget: object, fields [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: text}]}] }
