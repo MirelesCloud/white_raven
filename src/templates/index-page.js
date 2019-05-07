@@ -215,6 +215,7 @@ export const pageQuery = graphql`
         feature {
           gallery {
             title
+            
             image {
               childImageSharp {
                 fluid(maxWidth: 800, quality: 100) {
@@ -238,7 +239,7 @@ export const pageQuery = graphql`
                 fluid(maxWidth: 500, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
-              }
+             }
             }
             text
           }

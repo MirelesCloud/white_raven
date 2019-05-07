@@ -116,7 +116,6 @@ const MuralsPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         murals={frontmatter.murals}
-
       />
     </Layout>
   )
@@ -146,6 +145,7 @@ export const MuralsPageQuery = graphql`
         }
         murals {
           title
+          desc
           image {
             childImageSharp {
               fluid(maxWidth: 600) {

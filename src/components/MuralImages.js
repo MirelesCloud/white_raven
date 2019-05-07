@@ -19,7 +19,6 @@ const ImageFrame = styled.div`
     transform: scale(1.01);
   }
 `
-
 const imagesLoadedOptions = { background: '.has-background-grey' }
 
 class MuralImages extends React.Component {
@@ -83,17 +82,24 @@ class MuralModal extends React.Component {
   render() {
     let item = this.props.item
     let modalClass = this.props.open ? 'modal--open' : 'modal--closed'
-    console.log(this.props.item.image)
     return (
       <div className={modalClass}>
        <div className="modal-background"></div>
-         <div className="modal-card">
-          <div className="image" style={{margin:"100px"}}>
+         <div className="modal-card" style={{marginTop:"75px"}}>
+           <header className="modal-card-head">
+            <p className="modal-card-title">{item.title}</p>
+            <button className="delete" aria-label="close" onClick={this.props.closeModal}></button>
+          </header>
+          <div className="image">
             <Img fluid={item.image.childImageSharp.fluid}/>
-              <footer className="modal-card-foot" style={{backgroundColor:"#fff"}}>
-                <button className="button" onClick={this.props.closeModal}>Close</button>
-              </footer>
+
           </div>
+          <div className="modal-card-body">
+            <p>{item.desc}</p>
+          </div>
+          <footer className="modal-card-foot" >
+            <button className="button is-small is-outlined is-inverted">Purchase</button>
+          </footer>
         </div>
       </div>
     )
