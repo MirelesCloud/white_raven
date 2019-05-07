@@ -84,3 +84,11 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Gallery, name: gallery, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
+      - file: "src/pages/commissions/index.md"
+        label: "Commissions Page"
+        name: "commissions"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "commissions-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Gallery, name: gallery, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
