@@ -17,9 +17,7 @@ const Line = styled.hr`
 export const MuralsPageTemplate = ({
   image,
   title,
-  heading,
-  description,
-  murals,
+  main,
 }) => (
   <div>
     <section className="section section--gradient">
@@ -62,11 +60,11 @@ export const MuralsPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="tile">
-              <h1 className="title has-text-grey-lighter has-text-weight-light">{heading}</h1>
+              <h1 className="title has-text-grey-lighter has-text-weight-light">{main.heading}</h1>
             </div>
             <br/>
             <div className="tile">
-              <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{description}</h3>
+              <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{main.description}</h3>
             </div>
             <br/>
             <div>
@@ -78,7 +76,7 @@ export const MuralsPageTemplate = ({
       </div>
     </div>
     <div className="section">
-      <MuralsImages gridItems={murals}/>
+      <MuralsImages gridItems={main.murals}/>
     </div>
     <Line/>
   </div>
@@ -117,9 +115,7 @@ const MuralsPage = ({ data }) => {
       <MuralsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        murals={frontmatter.murals}
+        main={frontmatter.main}
       />
     </Layout>
   )
@@ -147,15 +143,17 @@ export const MuralsPageQuery = graphql`
             }
           }
         }
-        heading
-        description
-        murals {
-          title
-          desc
-          image {
-            childImageSharp {
-              fluid(maxWidth: 600) {
-                ...GatsbyImageSharpFluid
+        main {
+          heading
+          description
+          murals {
+            title
+            desc
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
