@@ -28,8 +28,8 @@ const FeatureImages = ({ gridItems }) => (
     updateOnEachImageLoad={true}
     imagesLoadedOptions={imagesLoadedOptions}
     >
-      {gridItems.map(item => (
-        <div key={item.text} className="column is-4 is-half-tablet is-full-mobile">
+      {gridItems.map((item, key) => (
+        <div key={key} className="column is-4 is-half-tablet is-full-mobile">
           <ImageFrame>
             <figure >
               <PreviewCompatibleImage imageInfo={item} />

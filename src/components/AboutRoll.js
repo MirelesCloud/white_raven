@@ -16,14 +16,17 @@ class AboutRoll extends React.Component {
             <div className="column is-10 is-offset-1">
                 <div className="columns">
                   <div className="column is-6">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className="has-text-weight-light is-size-2">
                       {frontmatter.title}
                     </h3>
                     <p>{frontmatter.about}</p>
                   </div>
                   <div className="column is-6">
                     <figure>
-                      <Img fluid={frontmatter.image.childImageSharp.fluid}/>
+                      <Img fluid={frontmatter.image.childImageSharp.fluid} style={{
+                          borderRadius: "50%",
+                          boxShadow: "3px 3px 2px 5px rgba(10, 10, 10, 0.3)"
+                        }}/>
 
                     </figure>
                   </div>
