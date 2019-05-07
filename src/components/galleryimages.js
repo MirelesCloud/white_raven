@@ -21,7 +21,7 @@ const ImageFrame = styled.div`
 `
 const imagesLoadedOptions = { background: '.has-background-grey' }
 
-class MuralImages extends React.Component {
+class GalleryImages extends React.Component {
   constructor(props) {
     super(props);
 
@@ -71,14 +71,14 @@ class MuralImages extends React.Component {
             )
           })}
         </Masonry>
-        <MuralModal item={this.state.selectedArt}
+        <GalleryModal item={this.state.selectedArt}
           open={this.state.modalOpen} closeModal={this.closeModal}/>
       </div>
     )
   }
 }
 
-class MuralModal extends React.Component {
+class GalleryModal extends React.Component {
   render() {
     let item = this.props.item
     let modalClass = this.props.open ? 'modal--open' : 'modal--closed'
@@ -106,5 +106,5 @@ class MuralModal extends React.Component {
   }
 }
 
-export default MuralImages
-export { MuralModal }
+export default GalleryImages
+export { GalleryModal }

@@ -20,5 +20,8 @@ main:
     - description: talk about this
       title: Birds 5
       image: /img/Birds-Ipu5.jpg
+    - description: talk about this
+      title: Ohia Lehua
+      image: /img/Ohia-Lehua_Ipu.jpg
   heading: Wood Art Heading
 ---

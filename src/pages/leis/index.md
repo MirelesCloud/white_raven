@@ -20,5 +20,8 @@ main:
     - description: talk about this
       title: Kukui Leis
       image: /img/Kukui_Lei_2.jpg
+    - description: talk about this
+      title: Rainbow Lei
+      image: /img/Rainbow_Lei.jpg
   heading: Leis Heading
 ---

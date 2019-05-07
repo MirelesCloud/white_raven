@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import MuralsImages from '../components/MuralImages'
+import GalleryImages from '../components/galleryimages'
 import BreadCrumbBar from '../components/breadcrumbs'
 
 import styled from 'styled-components'
@@ -76,7 +76,7 @@ export const MuralsPageTemplate = ({
       </div>
     </div>
     <div className="section">
-      <MuralsImages gridItems={main.gallery}/>
+      <GalleryImages gridItems={main.gallery}/>
     </div>
     <Line/>
   </div>

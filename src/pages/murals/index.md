@@ -20,6 +20,8 @@ main:
     - description: talk about this
       title: Mama Chaska
       image: /img/Mama_Chaska.jpg
+    - description: talk about this
+      title: Puna Seascape
+      image: /img/PunaSeaScape1.jpg
   heading: Murals Heading
 ---
-
