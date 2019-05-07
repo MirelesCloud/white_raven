@@ -76,7 +76,7 @@ export const MuralsPageTemplate = ({
       </div>
     </div>
     <div className="section">
-      <MuralsImages gridItems={main.murals}/>
+      <MuralsImages gridItems={main.gallery}/>
     </div>
     <Line/>
   </div>
@@ -146,7 +146,7 @@ export const MuralsPageQuery = graphql`
         main {
           heading
           description
-          murals {
+          gallery {
             title
             desc
             image {
