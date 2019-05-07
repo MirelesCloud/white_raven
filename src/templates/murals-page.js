@@ -148,7 +148,7 @@ export const MuralsPageQuery = graphql`
           description
           gallery {
             title
-            desc
+            description
             image {
               childImageSharp {
                 fluid(maxWidth: 600) {

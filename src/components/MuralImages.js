@@ -95,7 +95,7 @@ class MuralModal extends React.Component {
 
           </div>
           <div className="modal-card-body">
-            <p>{item.desc}</p>
+            <p>{item.description}</p>
           </div>
           <footer className="modal-card-foot" >
             <button className="button is-small is-outlined is-inverted">Purchase</button>
