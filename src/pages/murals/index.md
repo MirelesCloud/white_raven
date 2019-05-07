@@ -3,22 +3,23 @@ templateKey: murals-page
 title: Mural Art
 image: /img/mural-icon11-large.jpg
 main:
-  heading: Murals Heading
-  description: Murals descriptionription
+  description: Murals description
   gallery:
-    - image: /img/Collaborative 2014.jpg
-      title: Collaborative
-      description: Let's see if this works
-    - image: /img/img_3102.jpg
+    - description: Let's see if this works
       title: Kekahe
-      description: Let's see if this works
-    - image: /img/mural-birds-detail11.jpg
+      image: /img/img_3102.jpg
+    - description: Let's see if this works
       title: Raven Love
-      description: Let's see if this works
-    - image: /img/raven-love-162.jpg
+      image: /img/mural-birds-detail11.jpg
+    - description: Let's see if this works
       title: Raven Love 255
-      description: Let's see if this works
-    - image: /img/mural-blacklight12.jpg
+      image: /img/raven-love-162.jpg
+    - description: Let's see if this works
       title: Blacklight 12
-      description: Let's see if this works
+      image: /img/mural-blacklight12.jpg
+    - description: talk about this
+      title: Mama Chaska
+      image: /img/Mama_Chaska.jpg
+  heading: Murals Heading
 ---
+
