@@ -14,7 +14,7 @@ const BreadCrumbBar = () => (
     <br/>
     <ul className="is-uppercase">
       <li><Link to="/murals"><CrumbButton >Murals</CrumbButton></Link></li>
-      <li><Link to="/wood-art"><CrumbButton>Wood Art</CrumbButton></Link></li>
+      <li><Link to="/wood_art"><CrumbButton>Wood Art</CrumbButton></Link></li>
       <li><Link to="/leis"><CrumbButton>Leis</CrumbButton></Link></li>
       <li><Link to="/comissions"><CrumbButton>Commissions</CrumbButton></Link></li>
     </ul>
