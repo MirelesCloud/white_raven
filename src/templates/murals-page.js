@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import MuralsImages from '../components/MuralImages'
-import BreadCrumbBar from '../components/Breadcrumbs'
+import BreadCrumbBar from '../components/breadcrumbs'
 
 import styled from 'styled-components'
 

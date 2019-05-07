@@ -11,7 +11,7 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
-import BreadCrumbBar from '../components/Breadcrumbs'
+import BreadCrumbBar from '../components/breadcrumbs'
 
 const Logo = styled.figure`
 position: relative;
@@ -215,7 +215,7 @@ export const pageQuery = graphql`
         feature {
           gallery {
             title
-            
+
             image {
               childImageSharp {
                 fluid(maxWidth: 800, quality: 100) {
