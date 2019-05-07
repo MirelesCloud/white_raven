@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import { MuralsPageTemplate } from '../../templates/murals-page'
 
 const MuralsPagePreview = ({ entry, getAsset }) => {
-  const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
-  const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
+  
 
 
 
@@ -14,7 +13,7 @@ const MuralsPagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      gallery={{ blurbs }}
+
 
     />
   )
