@@ -87,7 +87,7 @@ class MuralModal extends React.Component {
        <div className="modal-background"></div>
          <div className="modal-card" style={{marginTop:"75px"}}>
            <header className="modal-card-head">
-            <p className="modal-card-title">{item.title}</p>
+            <p className="modal-card-title is-uppercase">{item.title}</p>
             <button className="delete" aria-label="close" onClick={this.props.closeModal}></button>
           </header>
           <div className="image">

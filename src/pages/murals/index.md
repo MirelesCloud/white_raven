@@ -3,6 +3,8 @@ templateKey: 'murals-page'
 path: /murals
 title: Mural Art
 image: /img/mural-icon11-large.jpg
+heading: Murals Heading  
+description: Murals description
 murals:
   - title: Kekahe
     desc: Kekahe description

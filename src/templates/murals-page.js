@@ -17,6 +17,8 @@ const Line = styled.hr`
 export const MuralsPageTemplate = ({
   image,
   title,
+  heading,
+  description,
   murals,
 }) => (
   <div>
@@ -60,11 +62,11 @@ export const MuralsPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="tile">
-              <h1 className="title has-text-grey-lighter has-text-weight-light">Murals Title</h1>
+              <h1 className="title has-text-grey-lighter has-text-weight-light">{heading}</h1>
             </div>
             <br/>
             <div className="tile">
-              <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">Murals description</h3>
+              <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{description}</h3>
             </div>
             <br/>
             <div>
@@ -115,6 +117,8 @@ const MuralsPage = ({ data }) => {
       <MuralsPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        heading={frontmatter.heading}
+        description={frontmatter.description}
         murals={frontmatter.murals}
       />
     </Layout>
@@ -143,6 +147,8 @@ export const MuralsPageQuery = graphql`
             }
           }
         }
+        heading
+        description
         murals {
           title
           desc
