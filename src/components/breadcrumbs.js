@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const CrumbButton = styled.span`
   color: #cccccc;
   :hover {
-    color: green;
+    color: #a6a6a6;
   }
 `
 const BreadCrumbBar = () => (
