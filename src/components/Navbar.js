@@ -31,6 +31,7 @@ const Navbar = class extends React.Component {
     );
   };
 
+
   render() {
     return (
       <nav
@@ -62,9 +63,27 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/contact/examples">
-                Art Gallery
-              </Link>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <Link className="navbar-link">
+                  Art Gallery
+                </Link>
+
+                <div className="navbar-dropdown">
+                  <Link className="navbar-item" to="/murals">
+                    Murals
+                  </Link>
+                  <Link className="navbar-item" to="/wood_art">
+                    Wood Art
+                  </Link>
+                  <Link className="navbar-item" to="/leis">
+                    Leis
+                  </Link>
+                  <hr className="navbar-divider"/>
+                  <Link className="navbar-item" to="/commissions">
+                    Commissions
+                  </Link>
+                </div>
+              </div>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -74,6 +93,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
+
             </div>
           </div>
         </div>

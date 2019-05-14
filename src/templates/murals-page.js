@@ -62,7 +62,7 @@ export const MuralsPageTemplate = ({
             <div className="tile">
               <h1 className="title has-text-grey-lighter has-text-weight-light">{main.heading}</h1>
             </div>
-            <br/>
+
             <div className="tile">
               <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{main.description}</h3>
             </div>

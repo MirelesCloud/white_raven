@@ -85,7 +85,7 @@ class GalleryModal extends React.Component {
     return (
       <div className={modalClass}>
        <div className="modal-background"></div>
-         <div className="modal-card" style={{marginTop:"75px"}}>
+         <div className="modal-card" style={{marginTop:"20px"}}>
            <header className="modal-card-head">
             <p className="modal-card-title is-uppercase">{item.title}</p>
             <button className="delete" aria-label="close" onClick={this.props.closeModal}></button>
