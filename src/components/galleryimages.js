@@ -9,6 +9,69 @@ const masonryOptions = {
     transitionDuration: 4
 };
 
+const ImageWrapper = styled.div`
+  position: "absolute"
+  width: 300px;
+  height: auto;
+  zIndex: 2;
+  transition: .5s ease;
+  box-shadow: 0 10px 10px -5px ;
+  cursor: pointer;
+  backface-visibility: hidden;
+  -webkit-filter: brightness(100%);
+  border-radius: 5px;
+  -webkit-filter: brightness(60%);
+
+`
+const View = styled.p`
+  background-color: rgba(51, 51, 77, 0.8);
+  color: white;
+  font-size: 16px;
+  padding: 4px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px
+
+`
+const Overlay = styled.div`
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .5s;
+   -moz-transition: all .5s;
+   -o-transition: all .5s;
+   transition: all .5s;
+
+  }
+`
+
+const Container = styled.div`
+  position: relative;
+  &:hover {
+    ${ImageWrapper} {
+      opacity: 0.6;
+      -ms-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+    ${Overlay} {
+      opacity: 1;
+    }
+  }
+`
+
 const ImageFrame = styled.div`
   border: 8px solid rgba(102, 51, 0, 1);
   padding: 20px 20px;
@@ -60,12 +123,17 @@ class GalleryImages extends React.Component {
             return (
               <div key={idx} className="column is-4 is-half-tablet is-full-mobile">
                 <ImageFrame onClick={ (evt) => this.openModal(evt, item) }>
-                    <figure >
-                      <PreviewCompatibleImage imageInfo={item}
-                        openModal={this.openModal}
+                    <Container>
+                      <ImageWrapper>
+                        <PreviewCompatibleImage imageInfo={item}
+                          openModal={this.openModal}
+                          />
+                      </ImageWrapper>
+                      <Overlay>
+                        <View>View</View>
+                      </Overlay>
 
-                        />
-                    </figure>
+                    </Container>
                 </ImageFrame>
               </div>
             )
