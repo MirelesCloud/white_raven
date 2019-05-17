@@ -9,6 +9,7 @@ const masonryOptions = {
     transitionDuration: 4
 };
 
+
 const ImageWrapper = styled.div`
   position: "absolute"
   width: 300px;
@@ -20,17 +21,17 @@ const ImageWrapper = styled.div`
   backface-visibility: hidden;
   -webkit-filter: brightness(100%);
   border-radius: 5px;
-  -webkit-filter: brightness(60%);
+  -webkit-filter: brightness(100%);
+
 
 `
 const View = styled.p`
-  background-color: rgba(51, 51, 77, 0.8);
+  background-color: rgba(255, 255, 240, 0.5);
   color: white;
-  font-size: 16px;
+  font-size: 1.5rem;
   padding: 4px 16px;
   cursor: pointer;
   text-transform: uppercase;
-  border-radius: 5px
 
 `
 const Overlay = styled.div`
@@ -53,12 +54,11 @@ const Container = styled.div`
   position: relative;
   &:hover {
     ${ImageWrapper} {
-      opacity: 0.6;
-      -ms-transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -webkit-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      transform: scale(1.05);
+      -ms-transform: scale(1.04);
+      -moz-transform: scale(1.04);
+      -webkit-transform: scale(1.04);
+      -o-transform: scale(1.04);
+      transform: scale(1.01);
       -webkit-filter: brightness(50%);
       -webkit-transition: all 1s ease;
       -moz-transition: all 1s ease;
@@ -76,11 +76,9 @@ const ImageFrame = styled.div`
   border: 8px solid rgba(102, 51, 0, 1);
   padding: 20px 20px;
   background-color: #fff;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5) inset;
   cursor: pointer;
-  :hover {
-    transform: scale(1.01);
-  }
+
 `
 const imagesLoadedOptions = { background: '.has-background-grey' }
 
@@ -131,8 +129,8 @@ class GalleryImages extends React.Component {
                       </ImageWrapper>
                       <Overlay>
                         <View>View</View>
-                      </Overlay>
 
+                      </Overlay>
                     </Container>
                 </ImageFrame>
               </div>

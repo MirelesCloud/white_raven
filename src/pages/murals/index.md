@@ -23,5 +23,5 @@ main:
     - description: talk about this
       title: Puna Seascape
       image: /img/PunaSeaScape1.jpg
-  heading: Murals Heading
+  heading: White Raven Murals
 ---

@@ -66,19 +66,18 @@ export const CommissionsPageTemplate = ({
             <div className="tile">
               <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{main.description}</h3>
             </div>
-            <br/>
-            <div>
-              <BreadCrumbBar/>
-              <Line/>
-            </div>
           </div>
         </div>
       </div>
     </div>
+    <Line/>
     <div className="section">
       <GalleryImages gridItems={main.gallery}/>
     </div>
-    <Line/>
+    <div>
+      <BreadCrumbBar/>
+      <Line/>
+    </div>
   </div>
 
 )

@@ -23,5 +23,5 @@ main:
     - description: talk about this
       title: Ohia Lehua
       image: /img/Ohia-Lehua_Ipu.jpg
-  heading: Wood Art Heading
+  heading: White Raven Wood Art
 ---

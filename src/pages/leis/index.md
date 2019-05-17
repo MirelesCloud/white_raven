@@ -23,5 +23,5 @@ main:
     - description: talk about this
       title: Rainbow Lei
       image: /img/Rainbow_Lei.jpg
-  heading: Leis Heading
+  heading: White Raven Leis
 ---

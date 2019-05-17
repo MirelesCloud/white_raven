@@ -20,41 +20,6 @@ export const LeisArtPageTemplate = ({
   main,
 }) => (
   <div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div
-                  className="full-width-image-container margin-top-0"
-                  style={{
-                    backgroundImage: `url(${
-                      !!image.childImageSharp
-                        ? image.childImageSharp.fluid.src
-                        : image
-                    })`,
-                  }}
-                >
-                  <h2
-                    className="has-text-weight-light is-size-1"
-                    style={{
-                      boxShadow: '0.5rem 0 0 #330033, -0.5rem 0 0 #330033',
-                      backgroundColor: 'rgba(51, 0, 51, 0.8)',
-                      color: 'white',
-                      padding: '1rem',
-
-                    }}
-                  >
-                    {title}
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <div className="section">
       <div className="container">
         <div className="columns">
@@ -66,19 +31,18 @@ export const LeisArtPageTemplate = ({
             <div className="tile">
               <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{main.description}</h3>
             </div>
-            <br/>
-            <div>
-              <BreadCrumbBar/>
-              <Line/>
-            </div>
           </div>
         </div>
       </div>
     </div>
+    <Line/>
     <div className="section">
       <GalleryImages gridItems={main.gallery}/>
     </div>
-    <Line/>
+    <div>
+      <BreadCrumbBar/>
+      <Line/>
+    </div>
   </div>
 
 )

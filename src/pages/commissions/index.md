@@ -23,5 +23,5 @@ main:
     - description: talk about this
       title: Yule Collaborative
       image: /img/Yule_Collaborative_018.jpg
-  heading: Commissions
+  heading: White Raven Commissions
 ---
