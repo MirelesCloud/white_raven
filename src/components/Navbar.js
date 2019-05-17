@@ -64,10 +64,9 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link className="navbar-link">
+                <div className="navbar-link">
                   Art Gallery
-                </Link>
-
+                </div>
                 <div className="navbar-dropdown">
                   <Link className="navbar-item" to="/murals">
                     Murals

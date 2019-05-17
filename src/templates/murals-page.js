@@ -25,8 +25,9 @@ export const MuralsPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="tile">
-              <h1 className="title has-text-grey-lighter has-text-weight-light">{main.heading}</h1>
+              <h1 className="title has-text-grey-lighter has-text-weight-light is-uppercase">{main.heading}</h1>
             </div>
+            <br/>
             <div className="tile">
               <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{main.description}</h3>
             </div>

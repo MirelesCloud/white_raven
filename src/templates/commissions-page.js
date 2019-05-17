@@ -36,18 +36,6 @@ export const CommissionsPageTemplate = ({
                     })`,
                   }}
                 >
-                  <h2
-                    className="has-text-weight-light is-size-1"
-                    style={{
-                      boxShadow: '0.5rem 0 0 #330033, -0.5rem 0 0 #330033',
-                      backgroundColor: 'rgba(51, 0, 51, 0.8)',
-                      color: 'white',
-                      padding: '1rem',
-
-                    }}
-                  >
-                    {title}
-                  </h2>
                 </div>
               </div>
             </div>
@@ -60,7 +48,7 @@ export const CommissionsPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="tile">
-              <h1 className="title has-text-grey-lighter has-text-weight-light">{main.heading}</h1>
+              <h1 className="title has-text-grey-lighter has-text-weight-light is-uppercase">{main.heading}</h1>
             </div>
             <br/>
             <div className="tile">
