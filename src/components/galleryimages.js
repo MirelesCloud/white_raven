@@ -141,7 +141,6 @@ class GalleryImages extends React.Component {
                       </ImageWrapper>
                       <Overlay>
                         <View>View</View>
-
                       </Overlay>
                     </Container>
                 </ImageFrame>
@@ -161,18 +160,19 @@ class GalleryModal extends React.Component {
     let item = this.props.item
     let modalClass = this.props.open ? 'modal--open' : 'modal--closed'
     return (
-      <div className={modalClass}>
-       <div className="modal-background">
-         <div className="columns">
-           <div className="column is-10 is-offset-1">
-             <figure className="image">
-               <button className="delete" aria-label="close" onClick={this.props.closeModal}></button>
-               <Img fluid={item.image.childImageSharp.fluid}/>
-               <FigCaption><h2>hello</h2></FigCaption>
-             </figure>
-           </div>
-         </div>
-       </div>
+
+      <div class={modalClass}>
+        <div class="modal-background"></div>
+        <div class="modal-content" style={{marginTop: "5%"}}>
+          <button class="modal-close is-large" aria-label="close"
+            onClick={this.props.closeModal}>Close</button>
+          <figure class="image">
+            <Img fluid={item.image.childImageSharp.fluid}/>
+            <FigCaption><h2>{item.title}</h2></FigCaption>
+          </figure>
+          <button class="modal-close is-large" aria-label="close"
+            onClick={this.props.closeModal}>Close</button>
+        </div>
       </div>
     )
   }

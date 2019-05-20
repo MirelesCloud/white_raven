@@ -215,7 +215,6 @@ export const pageQuery = graphql`
         feature {
           gallery {
             title
-
             image {
               childImageSharp {
                 fluid(maxWidth: 800, quality: 100) {
