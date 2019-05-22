@@ -8,8 +8,7 @@ import styled from 'styled-components'
 const masonryOptions = {
     transitionDuration: 4
 };
-
-const FigCaption = styled.div`
+const FigCaption = styled.h2`
   top: auto;
   bottom: 0;
   padding: 1em;
@@ -21,6 +20,13 @@ const FigCaption = styled.div`
   -webkit-transform: translate3d(0,100%,0);
   transform: translate3d(0,100%,0);
 `
+const ModalImage = styled.div`
+  &:hover {
+    ${FigCaption}
+
+  }
+`
+
 
 const ImageWrapper = styled.div`
   position: "absolute"
@@ -38,9 +44,8 @@ const ImageWrapper = styled.div`
 
 `
 const View = styled.p`
-  background-color: rgba(255, 255, 240, 0.5);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 4px 16px;
   cursor: pointer;
   text-transform: uppercase;
@@ -140,7 +145,7 @@ class GalleryImages extends React.Component {
                           />
                       </ImageWrapper>
                       <Overlay>
-                        <View>View</View>
+                        <View>{item.title}</View>
                       </Overlay>
                     </Container>
                 </ImageFrame>
@@ -166,10 +171,12 @@ class GalleryModal extends React.Component {
         <div class="modal-content" style={{marginTop: "5%"}}>
           <button class="modal-close is-large" aria-label="close"
             onClick={this.props.closeModal}>Close</button>
-          <figure class="image">
+          <ModalImage class="image">
             <Img fluid={item.image.childImageSharp.fluid}/>
-            <FigCaption><h2>{item.title}</h2></FigCaption>
-          </figure>
+            <FigCaption>{item.title}</FigCaption>
+
+
+          </ModalImage>
           <button class="modal-close is-large" aria-label="close"
             onClick={this.props.closeModal}>Close</button>
         </div>

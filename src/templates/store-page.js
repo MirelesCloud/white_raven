@@ -2,47 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import GalleryImages from '../components/galleryimages'
+import StoreImages from '../components/StoreImages'
 
-import styled from 'styled-components'
-
-const Line = styled.hr`
-  background-color: #cccccc;
-  margin-left: 75px;
-  margin-right: 75px;
-  height: 1px;
-`
-
-export const WoodArtPageTemplate = ({
+export const StorePageTemplate = ({
   image,
   title,
-  main,
+  store,
 }) => (
-  <div>
-    <div className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="tile">
-              <h1 className="title has-text-grey-lighter has-text-weight-light is-uppercase">{main.heading}</h1>
-            </div>
-            <br/>
-            <div className="tile">
-              <h3 className="subtitle has-text-grey-lighter has-text-left-mobile">{main.description}</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <Line/>
-    <div className="section">
-      <GalleryImages gridItems={main.gallery}/>
-    </div>
+  <div className="section">
+    <StoreImages gridItems={store.blurbs}/>
   </div>
-
 )
 
-WoodArtPageTemplate.propTypes = {
+StorePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -65,34 +37,24 @@ WoodArtPageTemplate.propTypes = {
     plans: PropTypes.array,
   }),
 }
-
-const WoodArtPage = ({ data }) => {
+const StorePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
     <Layout>
-      <WoodArtPageTemplate
+      <StorePageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        main={frontmatter.main}
-      />
+        store={frontmatter.store}
+        />
     </Layout>
   )
 }
 
-WoodArtPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+export default StorePage
 
-export default WoodArtPage
-
-export const WoodArtPageQuery = graphql`
-  query WoodArtPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+export const StorePageQuery = graphql`
+  query StorePage($id: String!) {
+    markdownRemark(id: {eq: $id }) {
       frontmatter {
         title
         image {
@@ -102,15 +64,13 @@ export const WoodArtPageQuery = graphql`
             }
           }
         }
-        main {
-          heading
-          description
-          gallery {
+        store {
+          blurbs {
             title
             description
             image {
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid
                 }
               }

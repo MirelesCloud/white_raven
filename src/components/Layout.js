@@ -2,8 +2,18 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import BreadCrumbBar from '../components/breadcrumbs'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
+
+import styled from 'styled-components'
+
+const Line = styled.hr`
+  background-color: #cccccc;
+  margin-left: 75px;
+  margin-right: 75px;
+  height: 1px;
+`
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -46,6 +56,8 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+      <BreadCrumbBar/>
+      <Line/>
       <Footer />
     </div>
   )

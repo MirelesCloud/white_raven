@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import GalleryImages from '../components/galleryimages'
-import BreadCrumbBar from '../components/breadcrumbs'
 
 import styled from 'styled-components'
 
@@ -38,10 +37,6 @@ export const LeisArtPageTemplate = ({
     <Line/>
     <div className="section">
       <GalleryImages gridItems={main.gallery}/>
-    </div>
-    <div>
-      <BreadCrumbBar/>
-      <Line/>
     </div>
   </div>
 

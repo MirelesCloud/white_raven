@@ -117,8 +117,6 @@ export const IndexPageTemplate = ({
       <FeatureImages gridItems={feature.gallery} />
     </section>
     <section className="section">
-
-
       <div className="columns">
         <div className="column is-12 has-text-centered" style={{
             paddingBottom: `40px`
@@ -144,6 +142,12 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <Line/>
+    <section className="section">
+      <div className="columns">
+        <div className="column">
+        </div>
+      </div>
+    </section>
     <AboutRoll/>
     <div>
       <Line/>
