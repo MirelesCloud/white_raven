@@ -10,6 +10,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import AboutRoll from '../components/AboutRoll'
+import StoreRoll from '../components/StoreRoll'
 import FeatureImages from '../components/FeatureImages'
 import BreadCrumbBar from '../components/breadcrumbs'
 
@@ -143,10 +144,7 @@ export const IndexPageTemplate = ({
     </section>
     <Line/>
     <section className="section">
-      <div className="columns">
-        <div className="column">
-        </div>
-      </div>
+      <StoreRoll/>
     </section>
     <AboutRoll/>
     <div>
