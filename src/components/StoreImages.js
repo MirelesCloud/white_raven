@@ -8,7 +8,14 @@ class StoreImages extends React.Component {
         {this.props.gridItems.map( (item, idx) => {
           return (
             <div key={idx} className="column is-4">
-              <PreviewCompatibleImage imageInfo={item}/>
+              <div className="card">
+                <div className="card-image">
+                  <figure className="image">
+                    <PreviewCompatibleImage imageInfo={item}/>
+                  </figure>
+                </div>
+              </div>
+
             </div>
             )
           })}

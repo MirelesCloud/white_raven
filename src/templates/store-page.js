@@ -18,24 +18,9 @@ StorePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
+  store: PropTypes.shape({
     blurbs: PropTypes.array,
-  }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
+  })
 }
 const StorePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -68,6 +53,7 @@ export const StorePageQuery = graphql`
           blurbs {
             title
             description
+            price
             image {
               childImageSharp {
                 fluid(maxWidth: 500) {
