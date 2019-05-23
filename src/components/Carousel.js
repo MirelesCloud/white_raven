@@ -2,9 +2,9 @@ import * as React from 'react'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const Carousel = ({ gridItems }) => (
-  <div className="columns">
+  <div className="columns is-mobile">
     {gridItems.map((item, key) => (
-      <div className="column is-3 is-4-mobile">
+      <div key={key} className="column is-2">
         <PreviewCompatibleImage imageInfo={item}/>
       </div>
     ))}

@@ -145,8 +145,16 @@ export const IndexPageTemplate = ({
     </section>
     <Line/>
     <section className="section">
+      <div className="columns has-text-centered">
+        <div className="column is-6">
+          <div className="content">
+            <Link to="/store" className="has-text-weight-light is-size-3 has-text-grey-lighter">
+              White Raven Store
+            </Link>
+          </div>
+        </div>
+      </div>
       <Carousel gridItems={carousel.swag} />
-
     </section>
       <Line/>
     <AboutRoll/>
