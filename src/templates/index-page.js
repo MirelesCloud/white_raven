@@ -10,8 +10,8 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import AboutRoll from '../components/AboutRoll'
-import StoreRoll from '../components/StoreRoll'
 import FeatureImages from '../components/FeatureImages'
+import Carousel from '../components/Carousel'
 import BreadCrumbBar from '../components/breadcrumbs'
 
 const Logo = styled.figure`
@@ -50,6 +50,7 @@ export const IndexPageTemplate = ({
   title,
   background,
   feature,
+  carousel,
   heading,
   subheading,
   mainpitch,
@@ -144,12 +145,11 @@ export const IndexPageTemplate = ({
     </section>
     <Line/>
     <section className="section">
-      <StoreRoll/>
+      <Carousel gridItems={carousel.swag} />
+
     </section>
-    <AboutRoll/>
-    <div>
       <Line/>
-    </div>
+    <AboutRoll/>
   </div>
 )
 
@@ -175,6 +175,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         background={frontmatter.background}
         feature={frontmatter.feature}
+        carousel={frontmatter.carousel}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -220,6 +221,17 @@ export const pageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 800, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        carousel {
+          swag {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 400, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }

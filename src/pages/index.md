@@ -29,6 +29,14 @@ feature:
       image: /img/img_0614.jpg
     - title: Blacklight 12
       image: /img/mural-blacklight12.jpg
+carousel:
+  swag:
+    - image: /img/heartbrokenopen_tshirt_women_navy.jpg
+    - image: /img/SuperMoonEclipseKoaekea_tshirt_women_cardinal.jpg
+    - image: /img/SuperMoonEclipseKoaekea_tshirt_women_black.jpg
+    - image: /img/cross_tshirt_womens_green.jpg
+    - image: /img/manos_y_semillas_tshirt_women_raspberry.jpg
+    - image: /img/mama_cocha_tshirt_women_yellow.jpg
 mainpitch:
   title: Aloha...
   description: >
