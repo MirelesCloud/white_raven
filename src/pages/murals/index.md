@@ -23,5 +23,9 @@ main:
     - description: talk about this
       title: Puna Seascape
       image: /img/PunaSeaScape1.jpg
+    - description: Manos Y Semillas detail
+      title: Manos Y Semillas
+      image: /img/Manos_y_semillas_detail_1.jpg
   heading: White Raven Murals
 ---
+
