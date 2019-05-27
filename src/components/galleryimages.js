@@ -47,7 +47,6 @@ const Header = styled.div`
     background: rgba(0, 0, 0, 0.25)
   }
 `
-
 const ImageWrapper = styled.div`
   position: "absolute"
   width: 300px;
@@ -60,8 +59,6 @@ const ImageWrapper = styled.div`
   -webkit-filter: brightness(100%);
   border-radius: 5px;
   -webkit-filter: brightness(100%);
-
-
 `
 const View = styled.p`
   color: white;

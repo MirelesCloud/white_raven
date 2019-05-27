@@ -1,6 +1,12 @@
 import * as React from 'react'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Masonry from 'react-masonry-component'
+import styled from 'styled-components'
+
+const Product = styled.div`
+  background-color: #fff;
+
+`
 
 const masonryOptions = {
     transitionDuration: 4
@@ -21,18 +27,18 @@ class StoreImages extends React.Component {
         {this.props.gridItems.map( (item, idx) => {
           return (
             <div key={idx} className="column is-4 is-half-tablet is-full-mobile">
-              <div className="card">
+              <div className="card ">
                 <div className="card-image">
                   <figure className="image">
                     <PreviewCompatibleImage imageInfo={item}/>
                   </figure>
                 </div>
-                <div className="card-content">
+                <Product className="card-content" style={{borderTop:"1px solid #cccccc"}}>
                   <div className="content">
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <p className="subtitle is-size-5 has-text-weight-bold">{item.title}</p>
+                    <p>{item.price}</p>
                   </div>
-                </div>
+                </Product>
               </div>
             </div>
             )

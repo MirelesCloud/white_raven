@@ -14,14 +14,15 @@ class BlogRoll extends React.Component {
               posts.map(({ node: post}) => (
               <div className="column is-one-quarter-fullhd is-one-quarter-widescreen is-half-tablet is-full-mobile is-flex" key={post.id}>
                 <div className="card has-text-grey-lighter" style={{
-                    border: "1px solid #fff"
+                    border: "1px solid #fff",
+                    backgroundColor: "#1a001a"
                   }}>
                   <div className="card-image">
                     <figure className="image">
                       <Img fluid={post.frontmatter.image.childImageSharp.fluid}/>
                     </figure>
                   </div>
-                  <div className="card-content">
+                  <div className="card-content" >
                     <article className="">
                       <p>
                         <Link

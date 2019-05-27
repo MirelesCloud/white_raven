@@ -8,9 +8,11 @@ store:
     - image: /img/heartbrokenopen_tshirt_women_navy.jpg
       title: Heart Broken Open
       description: Women's T-Shirt
+      price: $25.00
     - image: /img/mural_tshirt_women_red.jpg
       title: Mural
       description: Women's T-Shirt
+      price: $25.00
     - image: /img/mama_cocha_tshirt_women_tahitiblue.jpg
       title: Mama Cocha
       description: Women's T-Shirt
@@ -46,6 +48,7 @@ store:
     - image: /img/cross_tshirt_womens_green.jpg
       title: Cross
       description: Women's T-Shirt
+      price: $35.00
     - image: /img/SuperMoonEclipseKoaekea_tshirt_women_black.jpg
       title: Super Moon Eclipse Koaekea
       description: Women's T-Shirt
