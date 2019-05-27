@@ -33,7 +33,6 @@ class StoreImages extends React.Component {
                     <p>{item.description}</p>
                   </div>
                 </div>
-
               </div>
             </div>
             )

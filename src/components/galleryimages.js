@@ -8,25 +8,45 @@ import styled from 'styled-components'
 const masonryOptions = {
     transitionDuration: 4
 };
-const FigCaption = styled.h2`
-  top: auto;
-  bottom: 0;
-  padding: 1em;
-  height: 3.75em;
-  background: #fff;
-  color: #3c4a50;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-`
-const ModalImage = styled.div`
-  &:hover {
-    ${FigCaption}
 
+const Title = styled.h1`
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+`
+
+const Header = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: inherit;
+    background-attachment: fixed;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25)
   }
 `
-
 
 const ImageWrapper = styled.div`
   position: "absolute"
@@ -165,18 +185,15 @@ class GalleryModal extends React.Component {
     let item = this.props.item
     let modalClass = this.props.open ? 'modal--open' : 'modal--closed'
     return (
-
       <div class={modalClass}>
         <div class="modal-background"></div>
         <div class="modal-content" style={{marginTop: "5%"}}>
           <button class="modal-close is-large" aria-label="close"
             onClick={this.props.closeModal}>Close</button>
-          <ModalImage class="image">
+          <figure class="image">
             <Img fluid={item.image.childImageSharp.fluid}/>
-            <FigCaption>{item.title}</FigCaption>
-
-
-          </ModalImage>
+            <Header><Title>{item.title}</Title></Header>
+          </figure>
           <button class="modal-close is-large" aria-label="close"
             onClick={this.props.closeModal}>Close</button>
         </div>

@@ -17,6 +17,7 @@ const BreadCrumbBar = () => (
       <li><Link to="/wood_art"><CrumbButton>Wood Art</CrumbButton></Link></li>
       <li><Link to="/leis"><CrumbButton>Leis</CrumbButton></Link></li>
       <li><Link to="/commissions"><CrumbButton>Commissions</CrumbButton></Link></li>
+      <li><Link to="/store"><CrumbButton>Store</CrumbButton></Link></li>
     </ul>
   </nav>
 )
