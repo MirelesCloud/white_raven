@@ -18,7 +18,7 @@ class StoreImages extends React.Component {
   render() {
     return (
       <Masonry
-        className="columns is-multiline"
+        className="columns is-multiline is-mobile"
         options={masonryOptions}
         disableImagesLoaded={false}
         updateOnEachImageLoad={true}
@@ -26,7 +26,7 @@ class StoreImages extends React.Component {
         >
         {this.props.gridItems.map( (item, idx) => {
           return (
-            <div key={idx} className="column is-4 is-half-tablet is-full-mobile">
+            <div key={idx} className="column is-3-desktop is-one-quarter-tablet is-full-mobile">
               <div className="card ">
                 <div className="card-image">
                   <figure className="image">
@@ -36,6 +36,7 @@ class StoreImages extends React.Component {
                 <Product className="card-content" style={{borderTop:"1px solid #cccccc"}}>
                   <div className="content">
                     <p className="subtitle is-size-5 has-text-weight-bold">{item.title}</p>
+                    <p>{item.description}</p>
                     <p>{item.price}</p>
                   </div>
                 </Product>
