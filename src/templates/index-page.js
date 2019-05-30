@@ -144,7 +144,17 @@ export const IndexPageTemplate = ({
       </div>
     </section>
       <Line/>
-    <AboutRoll/>
+      <section>
+        <AboutRoll/>
+        <div className="columns is-6 has-text-centered">
+        <div className="column">
+          <Link className="button is-text" to="/about">
+            Read more
+          </Link>
+        </div>
+      </div>
+      </section>
+      <Line/>
   </div>
 )
 
