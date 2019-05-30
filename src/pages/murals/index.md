@@ -29,6 +29,9 @@ main:
     - description: Fertility Mural
       title: Fertility
       image: /img/Fertility.JPG
+    - description: Thunderhawk Mural
+      title: Thunderhawk
+      image: /img/Thunderhawk.jpg
   heading: White Raven Murals
 ---
 
