@@ -41,7 +41,7 @@ class BlogRoll extends React.Component {
                         {post.frontmatter.date}
                       </p>
                       <p className="has-text-centered">
-                        <Link className="btn" to={post.fields.slug}>
+                        <Link className="button is-small is-rounded is-outlined" to={post.fields.slug}>
                           Keep Reading >
                         </Link>
                       </p>

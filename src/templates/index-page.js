@@ -137,7 +137,7 @@ export const IndexPageTemplate = ({
       </div>
       <div className="columns is-12 has-text-centered">
         <div className="column">
-          <Link className="btn" to="/blog">
+          <Link className="button is-outlined is-inverted" to="/blog">
             Read more
           </Link>
         </div>
