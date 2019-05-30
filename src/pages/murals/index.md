@@ -26,12 +26,15 @@ main:
     - description: Manos Y Semillas detail
       title: Manos Y Semillas
       image: /img/Manos_y_semillas_detail_1.jpg
-    - description: Fertility Mural
-      title: Fertility
-      image: /img/Fertility.JPG
     - description: Thunderhawk Mural
       title: Thunderhawk
       image: /img/Thunderhawk.jpg
+    - description: Fertility Mural
+      title: Fertility
+      image: /img/Fertility.JPG
+    - description: Swan Mural
+      title: Saraswati Swan
+      image: /img/Saraswati_s Swan 2015.jpg
   heading: White Raven Murals
 ---
 
