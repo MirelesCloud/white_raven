@@ -1,7 +1,7 @@
 ---
 templateKey: leis-page
 title: Leis
-image: /img/mural-icon11-large.jpg
+image: /img/Saraswati_s Swan 2015.jpg
 main:
   description: leis description
   gallery:
@@ -25,3 +25,4 @@ main:
       image: /img/Rainbow_Lei.jpg
   heading: White Raven Leis
 ---
+
