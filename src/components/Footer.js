@@ -82,6 +82,11 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </div>
+        <div className="content has-text-centered">
+        <hr/>
+          <p className="is-size-7"><strong className="has-text-light">White Raven Creations &#169; 2019</strong> - Created by <a className="has-text-light" href="https://mirelescommuncations" aria-label="Mireles Communications" target="_blank" rel="noopener noreferrer">Mireles Communications</a> in the <a className="has-text-light" href="https://mirelescloud.com" aria-label="MirelesCloud" target="_blank" rel="noopener noreferrer">MirelesCloud.</a> All Rights Reserved</p>
+          <br/>
+        </div>
       </footer>
     )
   }
