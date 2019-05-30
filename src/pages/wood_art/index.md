@@ -1,7 +1,7 @@
 ---
 templateKey: wood-art-page
 title: Wood Art
-image: /img/mural-icon11-large.jpg
+image: /img/Birds-lpu2-large.jpg
 main:
   description: wood art description
   gallery:

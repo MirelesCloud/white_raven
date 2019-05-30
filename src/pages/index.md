@@ -12,7 +12,7 @@ feature:
     - title: Kekahe
       image: /img/img_3102.jpg
     - title: Bird Mural
-      image: /img/mural-birds-detail11.jpg
+      image: /img/Saraswati_s Swan 2015.jpg
     - title: Raven Love
       image: /img/raven-love-213.jpg
     - title: Elephant Mural
