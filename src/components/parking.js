@@ -1,49 +1,41 @@
-import React from 'react'
+
+import * as React from 'react'
+import {Link} from 'gatsby'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
 import styled from 'styled-components'
 
-const FigCaption = styled.div`
-  top: auto;
-  bottom: 0;
-  padding: 1em;
-  height: 3.75em;
-  background: #fff;
-  color: #3c4a50;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
+const Product = styled.div `
+  background-color: #fff;
+
 `
-const Parking = () => (
-  <div className="modal-card" style={{marginTop:"20px"}}>
-    <header className="modal-card-head">
-     <p className="modal-card-title is-uppercase">{item.title}</p>
-     <button className="delete" aria-label="close" onClick={this.props.closeModal}></button>
-   </header>
-   <figure className="image">
-     <Img fluid={item.image.childImageSharp.fluid}/>
-   </figure>
-   <div className="modal-card-body">
-     <p>{item.description}</p>
-   </div>
-   <footer className="modal-card-foot" >
-     <button className="button is-small is-outlined is-inverted">Purchase</button>
-   </footer>
- </div>
-)
 
-const Modal = () => (
-  <div className={modalClass}>
-   <div className="modal-background">
-     <div className="columns">
-       <div className="column is-10 is-offset-1">
-         <figure className="image">
-           <button className="delete" aria-label="close" onClick={this.props.closeModal}></button>
-           <Img fluid={item.image.childImageSharp.fluid}/>
-           <FigCaption><h2>hello</h2></FigCaption>
-         </figure>
-       </div>
-     </div>
-   </div>
-  </div>
+function StoreImages(props) {
+  return (<div className="columns is-multiline is-mobile">
+    {
+      props.gridItems.map((item) => {
+        return (<div key={item.id} className="column is-3-desktop is-one-quarter-tablet is-full-mobile">
+          <Link to={`/product/${item}`} state={{ fromFeed: true }} className="card ">
+            <div className="card-image">
+              <figure className="image">
+                <PreviewCompatibleImage imageInfo={item}/>
+              </figure>
+            </div>
+            <Product className="card-content" style={{
+                borderTop: "1px solid #cccccc"
+              }}>
+              <div className="content">
+                <p className="subtitle is-size-5 has-text-weight-bold">{item.title}</p>
+                <p>{item.description}</p>
+                <p>{item.price}</p>
+              </div>
+            </Product>
+          </Link>
+          <Link to="/product/">Click</Link>
+        </div>)
+      })
+    }
+  </div>)
+}
 
-)
+export default StoreImages

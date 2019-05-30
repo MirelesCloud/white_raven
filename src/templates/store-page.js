@@ -51,6 +51,7 @@ export const StorePageQuery = graphql`
         }
         store {
           blurbs {
+            id
             title
             description
             price

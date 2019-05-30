@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Masonry from 'react-masonry-component'
 import styled from 'styled-components'
@@ -41,6 +42,7 @@ class StoreImages extends React.Component {
                   </div>
                 </Product>
               </div>
+              <Link to="/product/">Click</Link>
             </div>
             )
           })}
