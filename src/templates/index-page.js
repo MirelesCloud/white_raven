@@ -14,6 +14,7 @@ import FeatureImages from '../components/FeatureImages'
 import Carousel from '../components/Carousel'
 import BreadCrumbBar from '../components/breadcrumbs'
 
+
 const Logo = styled.figure`
 position: relative;
   width: 200px;
@@ -117,6 +118,7 @@ export const IndexPageTemplate = ({
 
     }}>
       <FeatureImages gridItems={feature.gallery} />
+     
     </section>
     <section className="section">
       <div className="columns">
