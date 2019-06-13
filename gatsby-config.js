@@ -1,5 +1,9 @@
 var proxy = require("http-proxy-middleware")
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'White Raven Creations',
@@ -9,6 +13,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-stripe',
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Sku"],
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        downloadFiles: true,
+      }
+    },
     'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
