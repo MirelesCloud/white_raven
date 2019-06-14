@@ -13,11 +13,13 @@ const Container = styled.div`
 `
 
 class Skus extends React.Component {
-  state = {
-    stripe: window.Stripe('pk_test_ZJkiq6Dd3MtdzVqLbA3Psxrh00auJ33HZK', {
-      betas: ['checkout_beta_4'],
-    }),
-  }
+
+  componentDidMount() {
+    this.stripe = window.Stripe("pk_test_ZJkiq6Dd3MtdzVqLbA3Psxrh00auJ33HZK", {
+        betas: ["checkout_beta_4"],
+    })
+   }
+
   render() {
     return (
       <StaticQuery
