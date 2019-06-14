@@ -42,7 +42,7 @@ class Skus extends React.Component {
         render={({ skus }) => (
           <Container>
             {skus.edges.map(({ node: sku }) => (
-              <SkuCard key={sku.id} sku={sku} stripe={this.state.stripe} />
+              <SkuCard key={sku.id} sku={sku} stripe={this.stripe} />
             ))}
           </Container>
         )}
