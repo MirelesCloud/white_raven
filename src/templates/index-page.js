@@ -13,7 +13,7 @@ import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
 import Carousel from '../components/Carousel'
 import BreadCrumbBar from '../components/breadcrumbs'
-import Checkout from '../components/checkout'
+import Checkout from '../components/advancedCheckout'
 
 const Logo = styled.figure`
 position: relative;
