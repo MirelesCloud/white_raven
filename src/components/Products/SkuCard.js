@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
 import styled from 'styled-components'
 
@@ -53,14 +54,21 @@ const SkuCard = class extends React.Component {
 
   render() {
     const sku = this.props.sku
+    
     return (
-     <Card>
+      <div>
+      <figure><Img fluid={sku.localFiles[0].childImageSharp.fluid}/></figure>
+      <Card>
+       
        <h4>{sku.attributes.name}</h4>
        <p>Price: {formatPrice(sku.price, sku.currency)}</p>
        <Button onClick={event => this.redirectToCheckout(event, sku.id)}>
            Buy Me
        </Button>
      </Card>
+
+      </div>
+     
     )
   }
 }

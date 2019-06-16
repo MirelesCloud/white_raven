@@ -31,8 +31,16 @@ class Skus extends React.Component {
                   id
                   currency
                   price
+                  image
                   attributes {
                     name
+                  }
+                  localFiles {
+                    childImageSharp {
+                      fluid(maxWidth: 600, quality: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
                   }
                 }
               }
