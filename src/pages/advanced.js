@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 
 import Layout from '../components/Layout'
+import Cart from '../components/Cart'
 import Skus from '../components/Products/Skus'
 
 const SkuList = () => (
@@ -10,7 +11,10 @@ const SkuList = () => (
     <div className="section">
       <div className="container">
         <div className="columns">
-          <Skus/>
+          <Cart>
+            <Skus/>
+
+          </Cart>
         </div>
       </div>
     </div>
