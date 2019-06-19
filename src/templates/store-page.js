@@ -55,21 +55,6 @@ export const StorePageQuery = graphql`
             }
           }
         }
-        store {
-          blurbs {
-            id
-            title
-            description
-            price
-            image {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
