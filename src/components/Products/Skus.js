@@ -39,12 +39,17 @@ export default props => (
           }
         `}
         render={({ skus }) => (
-          <Container>
-            {skus.edges.map(({ node: sku }) => (
-              <SkuCard {...props} key={sku.id} sku={sku} />
-            ))}
-          </Container>
+          <section className="section">
+            <div className="container">
+              <div className="columns is-multiline" style={{display: "flex"}}>
+                {skus.edges.map(({ node: sku }) => (
+                  <div className="column is-3" style={{display: "flex"}}>
+                    <SkuCard {...props} key={sku.id} sku={sku} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         )}
       />
-
 )
