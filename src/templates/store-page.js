@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import StoreImages from '../components/StoreImages'
+import Cart from '../components/Cart'
+import Skus from '../components/Products/Skus'
 
 export const StorePageTemplate = ({
   image,
@@ -26,11 +28,15 @@ const StorePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout>
-      <StorePageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        store={frontmatter.store}
-        />
+       <div className="section">
+        <div className="container">
+          <div className="columns">
+            <Cart>
+              <Skus/>
+            </Cart>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

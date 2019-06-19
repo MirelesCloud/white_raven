@@ -1,4 +1,5 @@
 import React from 'react'
+
 import styled from 'styled-components'
 
 const Button = styled.button`
@@ -17,26 +18,30 @@ const Checkout = class extends React.Component {
   
   componentDidMount() {
     this.stripe = window.Stripe("pk_test_ZJkiq6Dd3MtdzVqLbA3Psxrh00auJ33HZK", {
-      betas: ["checkout_beta_4"],
+        betas: ["checkout_beta_4"],
     })
-  }
+   }
 
-  async redirectToCheckout(event) {
+   async redirectToCheckout(event) {
     event.preventDefault()
     const { error } = await this.stripe.redirectToCheckout({
-      items: [{ sku: "sku_FFVQ3uXkGdIMef", quantity: 1 }],
+      items: this.props.cart,
       successUrl: `http://localhost:8000/success/`,
-      cancelUrl: 'http://localhost:8000',
+      cancelUrl: 'http://localhost:8000/store',
     })
 
     if (error) {
-      console.warn("Error", error)
+      console.error("Error", error)
     }
   }
+
   render() {
     return (
-      <Button onClick={event => this.redirectToCheckout(event)} >
-        Purchase
+      <Button 
+        onClick={event => this.redirectToCheckout(event)}
+        disabled={!this.props.cart.length}
+      >
+        {this.props.cart.length ? 'GO TO CHECKOUT' : 'CART IS EMPTY'}
       </Button>
     )
   }
