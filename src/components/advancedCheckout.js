@@ -25,22 +25,23 @@ const Checkout = class extends React.Component {
    async redirectToCheckout(event) {
     event.preventDefault()
     const { error } = await this.stripe.redirectToCheckout({
-      items: [{ sku: "sku_FFVQ3uXkGdIMef", quantity: 1 }],
+      items: this.props.cart,
       successUrl: `http://localhost:8000/success/`,
       cancelUrl: 'http://localhost:8000/advanced',
     })
 
     if (error) {
-      console.warn("Error", error)
+      console.error("Error", error)
     }
   }
 
   render() {
     return (
-      <Button onClick={event => this.redirectToCheckout(event)}
-       
+      <Button 
+        onClick={event => this.redirectToCheckout(event)}
+        disabled={!this.props.cart.length}
       >
-        GO TO CHECKOUT
+        {this.props.cart.length ? 'GO TO CHECKOUT' : 'CART IS EMPTY'}
       </Button>
     )
   }
