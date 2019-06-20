@@ -25,6 +25,7 @@ export default props => (
                   image
                   attributes {
                     name
+                    size
                   }
                   localFiles {
                     childImageSharp {

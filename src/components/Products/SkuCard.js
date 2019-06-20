@@ -63,13 +63,14 @@ const SkuCard = class extends React.Component {
       <div className="card">
         <div className="card-image">
           <figure className="image">
-            <Img fluid={sku.localFiles[0].childImageSharp.fluid}/>
+           
           </figure>
         </div>
         <div className="card-content">
           <div className="content">
             <h4>{sku.attributes.name}</h4>
             <p>Price: {formatPrice(sku.price, sku.currency)}</p>
+            <p>Size: {sku.attributes.size}</p>
             <button className="button is-primary"
               onClick={event => this.addToCart(event, sku.id)}
               disabled={this.state.disabled}
