@@ -6,14 +6,8 @@ import styled from 'styled-components'
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  height: 100%;
   box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-  background-color: #fff;
-  border-radius: 6px;
-  max-width: 300px;
 `
 
 const Button = styled.button`
@@ -60,28 +54,34 @@ const SkuCard = class extends React.Component {
     const sku = this.props.sku
     
     return (
-      <div className="card" style={{height: "100%", paddingBottom: "14rem"}}>
+      <Card className="card">
         <div className="card-image">
           <figure className="image">
             <Img fluid={sku.localFiles[0].childImageSharp.fluid}/>
           </figure>
         </div>
-        <div className="card-content" style={{position: "absolute", bottom: "0"}}>
+        <div className="card-content" >
           <div className="content">
             <p className="title is-4">{sku.attributes.name}</p>
-            <p className="subtitle is-6">{sku.product.description}</p>
+            <p>{sku.product.description}</p>
+            
+          </div>
+        </div>
+        <footer className="card-footer" style={{marginTop: "auto"}}>
+          <p className="card-footer-item">
             <p>Price: {formatPrice(sku.price, sku.currency)}</p>
-            <p>Size: {sku.attributes.size}</p>
-            <button className="button is-primary"
+          </p>
+          <p className="card-footer-item">
+            <Button
               onClick={event => this.addToCart(event, sku.id)}
               disabled={this.state.disabled}
             >
-              {this.state.buttonText}
-            </button>
+            {this.state.buttonText}
+            </Button>
             {this.state.paymentMessage}
-          </div>
-        </div>
-      </div>
+          </p>
+        </footer>
+      </Card>
     )
   }
 }
