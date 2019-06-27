@@ -39,11 +39,13 @@ const Cart = class extends React.Component {
   render() {
     return (
       <div>
+        <p>Items in Cart: {this.state.cart.length}</p>
         <Checkout cart={this.state.cart} />
         {React.cloneElement(this.props.children, {
           addToCart: this.addToCart.bind(this),
           cart: this.state.cart
         })}
+        
       </div>
     )
   }
