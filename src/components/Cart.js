@@ -1,6 +1,21 @@
 import React from 'react'
 
 import Checkout from './checkout'
+import styled from 'styled-components'
+
+const ShoppingCart = styled.div`
+  font-size: 13px;
+  background-color: #fff;
+  text-align: left;
+  color: #000;
+  outline: none;
+  padding: 12px 60px;
+  box-shadow: 2px 5px 10px rgba(0,0,0,.1);
+  width: 240px;
+  border-radius: 2px;
+  letter-spacing: 1.5px;
+  marginTop: 20px;
+`
 
 const Cart = class extends React.Component {
   state = {
@@ -39,13 +54,14 @@ const Cart = class extends React.Component {
   render() {
     return (
       <div>
-        <p>Items in Cart: {this.state.cart.length}</p>
         <Checkout cart={this.state.cart} />
+        <ShoppingCart>
+          Items in Cart: {this.state.cart.length}
+        </ShoppingCart>
         {React.cloneElement(this.props.children, {
           addToCart: this.addToCart.bind(this),
           cart: this.state.cart
         })}
-        
       </div>
     )
   }
