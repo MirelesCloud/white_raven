@@ -2,24 +2,21 @@
 templateKey: blog-post
 title: Japan and Mongolia
 date: 2018-08-28T00:31:00.449Z
-description: >-
-  This is Zorro. He is a Mongolian stallion, roaming wild on the steppes, in the
-  valleys, and over the mountains. On our first day riding, he joined us at our
-  riverside camp spot. He seemed to be glad for a heard of mild Gildings, that
-  were 3 of our mounts.
+description: >
+  For my 40th birthday this year, I took myself on a horse trek into the Altai
+  mountains of western Mongolia. It’s been a dream of mine to visit Mongolia,
+  and connect with one of the last truly nomadic peoples on the planet. I was
+  needing “bigger perspective”, and the chance to be immersed in a new
+  unexplored culture. Sometimes, I think travel is the only thing that can get
+  me out of my deeper funks. Well, it worked. This trip brought me its share of
+  challenges, and oh-so-much-beauty as well.
 image: /img/img_1321.jpg
 tags:
   - Japan
   - Mongolia
   - Travel
 ---
-![]()
-
-![]()
-
-![]()
-
-For my 40th birthday this year, I took myself on a horse trek into the Altai mountains of western Mongolia. It’s been a dream of mine to visit Mongolia, and connect with one of the last truly nomadic peoples on the planet. I was needing “bigger perspective”, and the chance to be immersed in a new unexplored culture. Sometimes, I think travel is the only thing that can get me out of my deeper funks. Well, it worked. This trip brought me its share of challenges, and oh-so-much-beauty as well.
+This is Zorro. He is a Mongolian stallion, roaming wild on the steppes, in the valleys, and over the mountains. On our first day riding, he joined us at our riverside camp spot. He seemed to be glad for a heard of mild Gildings, that were 3 of our mounts.
 
 A 24 hour, planned layover in Tokyo started the journey off with a super fun dip-of-the-toes into Japanese culture. Definitely need more time in this inspiring and refined culture.
 
@@ -29,7 +26,7 @@ This is a “toilet pic” and now my dream toilet system…wow.
 
 ![Hashibuto-garasu ](/img/img_0910.jpg)
 
-This _Corvus macrohynchos_ or **\*\*[**Hashibuto-garasu\*\* ](https://www.japantimes.co.jp/life/2005/02/10/environment/jungle-crow/#.W4JnmRpuihA)as they are called, was one of many flying above Ebisu neighborhood, talking to me all day, and flying overhead.
+This _Corvus macrohynchos_ or[ Hashibuto-garasu](https://www.japantimes.co.jp/life/2005/02/10/environment/jungle-crow/#.W4JnmRpuihA) they are called, was one of many flying above Ebisu neighborhood, talking to me all day, and flying overhead.
 
 ![tea](/img/img_0921.jpg)
 
