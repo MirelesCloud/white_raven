@@ -81,8 +81,6 @@ Here are some scenes from the horse trek, culminating in a visit to the 5 sacred
 
 The Alexandra and Potani glaciers, and Tuvan stupa by the 5 sacred mountains.
 
-
-
 My travels to Asia this year give me much to think about and contemplate. I came back to the island feeling newly inspired and full of images and experiences which will be making their way into my creative process now. So grateful that our planet is still accessible for travel and that I got to meet these incredible people and places.
 
 ![golden-buddha](/img/img_1369.jpg "“Golden Buddha” Ulaanbatar, Mongolia")
