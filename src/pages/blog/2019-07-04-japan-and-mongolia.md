@@ -8,6 +8,10 @@ description: >-
   riverside camp spot. He seemed to be glad for a heard of mild Gildings, that
   were 3 of our mounts.
 image: /img/img_1321.jpg
+tags:
+  - Japan
+  - Mongolia
+  - Travel
 ---
 ![]()
 
