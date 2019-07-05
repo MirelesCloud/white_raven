@@ -13,9 +13,9 @@ Lauren Canton, has a class there called “Peer Mediators”, and one of the cla
 
 ![Aloha Kekahi i kekahi](/img/img_3102.jpg)
 
-
-
 The design is a Hawaiian phrase, “Aloha Kekahi i kekahi”, which has been translated as “love one another”. The original pencil and pen design was in black-and-white so we discussed color schemes, and all of us created different examples. The students asked me to piece together their ideas into one congruent color image. The result was the following. 
+
+![Kohala middle-school](/img/img_3114.jpg)
 
 Next we had to figure out how to create a mural on six different plywood boards that were available to us. The biggest challenge for me was how to figure out the projection process for the image onto the boards, since we were literally just projecting one piece of the puzzle onto each one, and needing it to all aligned perfectly. Needless to say there was a lot of measuring and double checking on dimensions and lines. I did end up having to fix a few things out of alignment between the boards, but ultimately, when we brought them all out from under the school, onto the lawn and lined them up, it was pretty close. Or second challenge was having to paint under the school which is a very challenging space to move about. It’s very dusty and that created part of the challenge with dust being blown onto wet paint at times. There are also some support beams which hang pretty low, and in the cramped space we bumped her heads a few times. All part of the learning with an artistic process. 
 
