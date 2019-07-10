@@ -11,7 +11,7 @@ const ShoppingCart = styled.div`
   outline: none;
   padding: 12px 60px;
   box-shadow: 2px 5px 10px rgba(0,0,0,.1);
-  width: 240px;
+  width: 250px;
   border-radius: 2px;
   letter-spacing: 1.5px;
   marginTop: 20px;

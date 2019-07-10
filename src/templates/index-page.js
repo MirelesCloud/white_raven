@@ -8,7 +8,7 @@ import arrow from "../img/arrow.svg"
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
+import HomeBlogRoll from '../components/HomeBlogRoll'
 import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
 import Carousel from '../components/Carousel'
@@ -132,7 +132,7 @@ export const IndexPageTemplate = ({
           marginBottom: `40px`
         }}>
         <div className="column is-full has-text-centered">
-          <BlogRoll />
+          <HomeBlogRoll />
         </div>
       </div>
       <div className="columns is-12 has-text-centered">
@@ -146,13 +146,7 @@ export const IndexPageTemplate = ({
       <Line/>
       <section>
         <AboutRoll/>
-        <div className="columns is-6 has-text-centered">
-        <div className="column">
-          <Link className="button is-text" to="/about">
-            Read more
-          </Link>
-        </div>
-      </div>
+      
       </section>
       <Line/>
   </div>

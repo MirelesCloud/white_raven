@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery, Link } from 'gatsby'
 
 class AboutRoll extends React.Component {
 
@@ -20,6 +20,13 @@ class AboutRoll extends React.Component {
                       {frontmatter.title}
                     </h3>
                     <p>{frontmatter.about}</p>
+                    <br/>
+                    <div className="has-text-centered">
+                      <Link className="button is-text" to="/blog">
+                        Read more
+                      </Link>
+                    </div>
+                    
                   </div>
                   <div className="column is-6">
                     <figure>
