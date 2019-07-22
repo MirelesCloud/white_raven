@@ -17,7 +17,7 @@ const Button = styled.button`
 const Checkout = class extends React.Component {
   
   componentDidMount() {
-    this.stripe = window.Stripe("pk_test_ZJkiq6Dd3MtdzVqLbA3Psxrh00auJ33HZK", {
+    this.stripe = window.Stripe("pk_test_hrVo20ledg9ManI6JW597i7H00LhAGaFuG", {
         betas: ["checkout_beta_4"],
     })
    }
