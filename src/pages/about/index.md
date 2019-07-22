@@ -1,12 +1,14 @@
 ---
 templateKey: about-page
 title: About White Raven
-image: /img/Raven-2011.jpg
+image: /img/image4.jpeg
 about: >-
-  Raven Michelle Diaz Raven was raised in a very artistic and
-  musical home, and from an early age developed a love for the creative process.
-  
-  She sat next to her Grandfather who was a talented painter and absorbed much of his artistic process. During her adolescence she took several art classes and begin to self-teach many skills.
+  Raven Michelle Diaz Raven was raised in a very artistic and musical home, and
+  from an early age developed a love for the creative process.
+
+  She sat next to her Grandfather who was a talented painter and absorbed much
+  of his artistic process. During her adolescence she took several art classes
+  and begin to self-teach many skills.
 ---
 
 She graduated in 2006 with a BA in Int. Relations and Spanish, and a minor in art.  Although all of the various artistic instruction was helpful, she identifies mostly as self-taught, taking inspiration primarily from Nature and the living mythology of existence.
