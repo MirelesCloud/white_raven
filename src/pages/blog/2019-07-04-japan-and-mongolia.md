@@ -10,12 +10,14 @@ description: >
   unexplored culture. Sometimes, I think travel is the only thing that can get
   me out of my deeper funks. Well, it worked. This trip brought me its share of
   challenges, and oh-so-much-beauty as well.
-image: /img/img_1321.jpg
+image: /img/img_0997.jpg
 tags:
   - Japan
   - Mongolia
   - Travel
 ---
+![Zorro](/img/img_1321.jpg "Zorro")
+
 This is Zorro. He is a Mongolian stallion, roaming wild on the steppes, in the valleys, and over the mountains. On our first day riding, he joined us at our riverside camp spot. He seemed to be glad for a heard of mild Gildings, that were 3 of our mounts.
 
 A 24 hour, planned layover in Tokyo started the journey off with a super fun dip-of-the-toes into Japanese culture. Definitely need more time in this inspiring and refined culture.
