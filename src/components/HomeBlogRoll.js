@@ -15,7 +15,10 @@ class HomeBlogRoll extends React.Component {
               <div className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex" key={post.id}>
                 <div className="card has-text-grey-lighter" style={{
                     border: "1px solid #fff",
-                    backgroundColor: "#1a001a"
+                    backgroundColor: "#1a001a",
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100%"
                   }}>
                   <div className="card-image">
                     <figure className="image">
@@ -23,7 +26,6 @@ class HomeBlogRoll extends React.Component {
                     </figure>
                   </div>
                   <div className="card-content" >
-                    <article className="">
                       <p>
                         <Link
                           className="title has-text-weight-light is-size-4 has-text-grey-lighter"
@@ -40,13 +42,15 @@ class HomeBlogRoll extends React.Component {
                       <p className="subtitle is-size-6 has-text-right has-text-grey-lighter">
                         {post.frontmatter.date}
                       </p>
-                      <p className="has-text-centered">
-                        <Link className="button is-small is-rounded is-outlined" to={post.fields.slug}>
+                      
+                  </div>
+                    <footer className="card-footer" style={{marginTop: "auto"}}>
+                      <div className="card-footer-item">
+                        <Link className="button is-small is-rounded" to={post.fields.slug}>
                           Keep Reading >
                         </Link>
-                      </p>
-                    </article>
-                  </div>
+                      </div>
+                    </footer>
                 </div>
               </div>
               ))}

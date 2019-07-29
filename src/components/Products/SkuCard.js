@@ -52,7 +52,7 @@ const SkuCard = class extends React.Component {
 
   render() {
     const sku = this.props.sku
-    
+    console.log(sku.localFiles)
     return (
       <Card className="card">
         <div className="card-image">
@@ -64,7 +64,7 @@ const SkuCard = class extends React.Component {
         <div className="card-content" >
           <div className="content">
             <p className="title is-4">{sku.attributes.name}</p>
-            <p>{sku.product.description}</p>
+           
             
           </div>
         </div>
