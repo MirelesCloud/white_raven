@@ -57,7 +57,7 @@ const SkuCard = class extends React.Component {
       <Card className="card">
         <div className="card-image">
           <figure className="image">
-            <Img fluid={sku.localFiles[0].childImageSharp.fluid}/>
+            <img  src={sku.image}/>
           </figure>
         </div>
         <hr/>

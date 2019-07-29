@@ -22,7 +22,6 @@ export default props => (
                   image
                   attributes {
                     name
-                    size
                   }
                   product {
                     description
