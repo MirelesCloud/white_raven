@@ -16,6 +16,8 @@ tags:
   - Mongolia
   - Travel
 ---
+For my 40th birthday this year, I took myself on a horse trek into the Altai mountains of western Mongolia. It’s been a dream of mine to visit Mongolia, and connect with one of the last truly nomadic peoples on the planet. I was needing “bigger perspective”, and the chance to be immersed in a new unexplored culture. Sometimes, I think travel is the only thing that can get me out of my deeper funks. Well, it worked. This trip brought me its share of challenges, and oh-so-much-beauty as well.
+
 ![Zorro](/img/img_1321.jpg "Zorro")
 
 This is Zorro. He is a Mongolian stallion, roaming wild on the steppes, in the valleys, and over the mountains. On our first day riding, he joined us at our riverside camp spot. He seemed to be glad for a heard of mild Gildings, that were 3 of our mounts.
