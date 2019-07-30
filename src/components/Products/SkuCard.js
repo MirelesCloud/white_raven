@@ -52,7 +52,6 @@ const SkuCard = class extends React.Component {
 
   render() {
     const sku = this.props.sku
-    console.log(sku.localFiles)
     return (
       <Card className="card">
         <div className="card-image">
@@ -60,17 +59,15 @@ const SkuCard = class extends React.Component {
             <img  src={sku.image}/>
           </figure>
         </div>
-        <hr/>
         <div className="card-content" >
           <div className="content">
             <p className="title is-4">{sku.attributes.name}</p>
-           
-            
+            <p>{sku.product.description}</p>
           </div>
         </div>
         <footer className="card-footer" style={{marginTop: "auto"}}>
-          <p className="card-footer-item">
-            <p>Price: {formatPrice(sku.price, sku.currency)}</p>
+          <p className="card-footer-item has-text-centered">
+            <p>Price: {formatPrice(sku.price, sku.currency)} <small>+shipping</small></p>
           </p>
           <p className="card-footer-item">
             <Button

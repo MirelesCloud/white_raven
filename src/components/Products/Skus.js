@@ -23,6 +23,9 @@ export default props => (
                   attributes {
                     name
                   }
+                  product {
+                    description
+                  }
                   localFiles {
                     childImageSharp {
                       fluid(maxWidth: 600, quality: 100) {
