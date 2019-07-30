@@ -43,8 +43,8 @@ export default props => (
             <div className="container">
               <div className="columns is-multiline">
                 {skus.edges.map(({ node: sku }, idx) => (
-                  <div className="column is-4">
-                    <SkuCard {...props} key={idx} sku={sku} />
+                  <div className="column is-4" key={idx}>
+                    <SkuCard {...props} sku={sku} />
                   </div>
                 ))}
               </div>

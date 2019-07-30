@@ -43,7 +43,6 @@ const Cart = class extends React.Component {
         <Checkout cart={this.state.cart} />
         <div>
           <p>Items in Cart: {this.state.cart.length}</p>
-          <p>Please allow 4 - 6 weeks for shipping.  Thank you for your understanding</p>
         </div>
         {React.cloneElement(this.props.children, {
           addToCart: this.addToCart.bind(this),

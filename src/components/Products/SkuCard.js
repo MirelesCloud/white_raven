@@ -66,9 +66,9 @@ const SkuCard = class extends React.Component {
           </div>
         </div>
         <footer className="card-footer" style={{marginTop: "auto"}}>
-          <p className="card-footer-item has-text-centered">
+          <div className="card-footer-item has-text-centered">
             <p>Price: {formatPrice(sku.price, sku.currency)} <small>+shipping</small></p>
-          </p>
+          </div>
           <p className="card-footer-item">
             <Button
               onClick={event => this.addToCart(event, sku.id)}

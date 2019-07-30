@@ -44,7 +44,10 @@ const StorePage = ({ data }) => {
             <div className="column">
               <div className="content">
                 <div className="tile">
-                  <h1 className="title has-text-grey-lighter has-text-weight-light is-uppercase">White Raven Store</h1>
+                  <h1 className="title has-text-grey-lighter has-text-weight-light is-uppercase">{frontmatter.title}</h1>
+                </div>
+                <div>
+                <p>{frontmatter.description}</p>
                 </div>
               </div>
             </div>
@@ -72,6 +75,7 @@ export const StorePageQuery = graphql`
     markdownRemark(id: {eq: $id }) {
       frontmatter {
         title
+        description
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
