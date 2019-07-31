@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About White Raven
-image: /img/image4.jpeg
+image: /img/image2.jpeg
 about: >-
   Raven Michelle Diaz Raven was raised in a very artistic and musical home, and
   from an early age developed a love for the creative process.

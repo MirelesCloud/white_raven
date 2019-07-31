@@ -25,6 +25,9 @@ export default props => (
                   }
                   product {
                     description
+                    name
+                    images
+
                   }
                   localFiles {
                     childImageSharp {

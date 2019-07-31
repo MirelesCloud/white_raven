@@ -56,12 +56,12 @@ const SkuCard = class extends React.Component {
       <Card className="card">
         <div className="card-image">
           <figure className="image">
-            <img  src={sku.image}/>
+            <img  src={sku.product.images}/>
           </figure>
         </div>
         <div className="card-content" >
           <div className="content">
-            <p className="title is-4">{sku.attributes.name}</p>
+            <p className="title is-4">{sku.product.name}</p>
             <p>{sku.product.description}</p>
           </div>
         </div>
