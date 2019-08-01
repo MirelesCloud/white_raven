@@ -10,6 +10,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import AboutRoll from '../components/AboutRoll'
 import FeatureImages from '../components/FeatureImages'
+
 import BreadCrumbBar from '../components/breadcrumbs'
 
 const Logo = styled.figure`
@@ -45,20 +46,16 @@ const Line = styled.hr`
 
 export const IndexPageTemplate = ({
   image,
-  title,
-  background,
   feature,
   heading,
   subheading,
   mainpitch,
-  description,
-  intro,
-  main,
+  
 }) => (
   <div>
     <section className="hero is-fullheight-with-navbar" style={{
       backgroundImage: `url(${
-        !!background.childImageSharp ? background.childImageSharp.fluid.src : image
+        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
       })`,
       backgroundPosition: `center`,
       backgroundAttachment: `fixed`,
@@ -107,7 +104,7 @@ export const IndexPageTemplate = ({
     </section>
     <section className="section" style={{
       backgroundImage: `url(${
-        !!background.childImageSharp ? background.childImageSharp.fluid.src : image
+        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
       })`,
       backgroundPosition: `center`,
       backgroundAttachment: `fixed`,
@@ -126,14 +123,9 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -143,14 +135,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
-        background={frontmatter.background}
         feature={frontmatter.feature}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -178,13 +166,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        background {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        
         feature {
           gallery {
             title
@@ -215,8 +197,6 @@ export const pageQuery = graphql`
             }
             text
           }
-          heading
-          description
         }
       }
     }
