@@ -21,12 +21,6 @@ class AboutRoll extends React.Component {
                     </h3>
                     <p>{frontmatter.about}</p>
                     <br/>
-                    <div className="has-text-centered">
-                      <Link className="button is-text" to="/blog">
-                        Read more
-                      </Link>
-                    </div>
-                    
                   </div>
                   <div className="column is-6">
                     <figure>
