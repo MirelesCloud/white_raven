@@ -2,14 +2,7 @@
 templateKey: blog-post
 title: Japan and Mongolia
 date: 2018-08-28T00:31:00.449Z
-description: >
-  For my 40th birthday this year, I took myself on a horse trek into the Altai
-  mountains of western Mongolia. It’s been a dream of mine to visit Mongolia,
-  and connect with one of the last truly nomadic peoples on the planet. I was
-  needing “bigger perspective”, and the chance to be immersed in a new
-  unexplored culture. Sometimes, I think travel is the only thing that can get
-  me out of my deeper funks. Well, it worked. This trip brought me its share of
-  challenges, and oh-so-much-beauty as well.
+description: aa
 image: /img/img_0997.jpg
 tags:
   - Japan
