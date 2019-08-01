@@ -2,9 +2,6 @@
 templateKey: blog-post
 title: Kohala Middle-School Mural Project
 date: 2018-12-10T01:05:11.808Z
-description: >-
-  At an art event late October, I was asked to help the Kohala middle-school
-  with a mural project. 
 image: /img/HeartBrokeOpen2.jpg
 tags:
   - Kohala-middle-school

@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: Astronomy Challange
 date: 2018-09-15T00:22:56.076Z
-description: aa
 image: /img/img_1407.jpg
 tags:
   - astronomy

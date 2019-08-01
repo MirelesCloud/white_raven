@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: “Natural” Disasters
 date: 2018-08-26T01:08:11.646Z
-description: aa
 image: /img/img_2001.jpg
 tags:
   - Kawaihae Harbor

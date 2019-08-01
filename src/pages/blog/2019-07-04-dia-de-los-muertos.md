@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: Dia De Los Muertos
 date: 2017-11-04T01:21:03.358Z
-description: aa
 image: /img/img_1151.jpg
 tags:
   - dia-de-los-muertos
