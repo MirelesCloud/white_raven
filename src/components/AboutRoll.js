@@ -28,7 +28,6 @@ class AboutRoll extends React.Component {
                           borderRadius: "50%",
                           boxShadow: "3px 3px 2px 5px rgba(10, 10, 10, 0.3)"
                         }}/>
-
                     </figure>
                   </div>
                 </div>

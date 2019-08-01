@@ -15,6 +15,3 @@ about: >-
   Her Peruvian Mural series is on permanent display in Cajamarca, Peru. She also has murals displayed in California, Oregon, and Hawaii.  Raven utilizes various mediums for her creations and canvasses, including acrylics, watercolors,oils, fire, wood, gourds, and found natural objects.  She prefers to use round or circular canvases as as they are evocative of the feminine form.
 ---
 
-She graduated in 2006 with a BA in Int. Relations and Spanish, and a minor in art.  Although all of the various artistic instruction was helpful, she identifies mostly as self-taught, taking inspiration primarily from Nature and the living mythology of existence.
-
-Her Peruvian Mural series is on permanent display in Cajamarca, Peru. She also has murals displayed in California, Oregon, and Hawaii.  Raven utilizes various mediums for her creations and canvasses, including acrylics, watercolors,oils, fire, wood, gourds, and found natural objects.  She prefers to use round or circular canvases as as they are evocative of the feminine form.

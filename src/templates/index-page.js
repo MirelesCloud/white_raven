@@ -118,31 +118,6 @@ export const IndexPageTemplate = ({
     }}>
       <FeatureImages gridItems={feature.gallery} />
     </section>
-    <section className="section">
-      <div className="columns">
-        <div className="column is-12 has-text-centered" style={{
-            paddingBottom: `40px`
-          }}>
-          <Line/>
-          <Title>Blog</Title>
-          <Line/>
-        </div>
-      </div>
-      <div className="columns is-12 has-text-centered" style={{
-          marginBottom: `40px`
-        }}>
-        <div className="column is-full has-text-centered">
-          <HomeBlogRoll />
-        </div>
-      </div>
-      <div className="columns is-12 has-text-centered">
-        <div className="column">
-          <Link className="button is-text" to="/blog">
-            Read more
-          </Link>
-        </div>
-      </div>
-    </section>
       <Line/>
       <section>
         <AboutRoll/>
