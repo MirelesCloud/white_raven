@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Japan and Mongolia
 date: 2018-08-28T00:31:00.449Z
+description: Blog
 image: /img/img_0997.jpg
 tags:
   - Japan
