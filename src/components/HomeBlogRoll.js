@@ -36,6 +36,7 @@ class HomeBlogRoll extends React.Component {
                       </p>
                       <p className="has-text-justified">
                         {post.excerpt}
+                        
                         <br />
                         <br />
                       </p>
