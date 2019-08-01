@@ -2,13 +2,7 @@
 templateKey: blog-post
 title: Dia De Los Muertos
 date: 2017-11-04T01:21:03.358Z
-description: >-
-  When the veils are thin, peek in! That’s how day of the dead, or “Dia de los
-  muertos” as we call it in Spanish, feels for me. It’s a chance to reach across
-  the gap between the spirit world, and our present time space, and reconnect
-  with our loved ones who have passed over. Decorating alters, visiting
-  gravesides, eating foods that we know our ancestors loved to eat, singing
-  songs and telling stories…all part of the ritual.
+description: aa
 image: /img/img_1151.jpg
 tags:
   - dia-de-los-muertos
