@@ -7,8 +7,8 @@ subheading: Art Inspired Through The Mystery
 feature:
   description: Angel Mural
   gallery:
-    - title: Mama Quilla
-      image: /img/Mama_Quilla_shine.jpg
+    - title: Sarasati Swan
+      image: /img/Saraswati_s Swan 2015.jpg
   heading: Angel
 mainpitch:
   description: >
