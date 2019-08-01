@@ -2,8 +2,7 @@
 templateKey: blog-post
 title: Kohala Middle-School Mural Project
 date: 2018-12-10T01:05:11.808Z
-description: Blog
-image: /img/HeartBrokeOpen2.jpg
+image: /img/img_3102.jpg
 tags:
   - Kohala-middle-school
   - Aloha-Kekahi-i-kekahi
