@@ -29,7 +29,7 @@ const FeatureImages = ({ gridItems }) => (
     imagesLoadedOptions={imagesLoadedOptions}
     >
       {gridItems.map((item, key) => (
-        <div key={key} className="column is-4 is-half-tablet is-full-mobile">
+        <div key={key} className="column">
           <ImageFrame>
             <figure >
               <PreviewCompatibleImage imageInfo={item} />
