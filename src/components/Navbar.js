@@ -69,6 +69,9 @@ const Navbar = class extends React.Component {
                   Art Gallery
                 </div>
                 <div className="navbar-dropdown">
+                <Link className="navbar-item is-size-6" to="/paintings">
+                    Paintings
+                  </Link>
                   <Link className="navbar-item is-size-6" to="/murals">
                     Murals
                   </Link>
