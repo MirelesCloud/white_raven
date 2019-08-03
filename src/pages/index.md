@@ -8,8 +8,8 @@ feature_image: /img/HeartBrokenOpen.jpg
 feature:
   description: Angel Mural
   gallery:
-    - title: Sarasati Swan
-      image: /img/Saraswati_s Swan 2015.jpg
+    - title: Heart Broken Open
+      image: /img/HeartBrokeOpen.jpg
   heading: Angel
 mainpitch:
   description: >
