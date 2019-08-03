@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import StoreImages from '../components/StoreImages'
 import Cart from '../components/Cart'
 import Skus from '../components/Products/Skus'
+import Product from '../components/ProductGrid'
 
 import styled from 'styled-components'
 
@@ -58,9 +59,7 @@ const StorePage = ({ data }) => {
       <div className="section">
         <div className="container">
           <div className="columns">
-            <Cart>
-              <Skus/>
-            </Cart>
+            <Product/>
           </div>
         </div>
       </div>

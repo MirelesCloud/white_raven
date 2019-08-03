@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import ScrollAnimation from 'react-animate-on-scroll'
 import logo from "../img/logo.svg"
 import arrow from "../img/arrow.svg"
+
 
 import styled from 'styled-components'
 
@@ -110,6 +112,7 @@ export const IndexPageTemplate = ({
       backgroundAttachment: `fixed`,
 
     }}>
+      <Img fluid={image.childImageSharp.fluid}/>
       <FeatureImages gridItems={feature.gallery} />
     </section>
       <Line/>
@@ -166,7 +169,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        
+        feature_image
         feature {
           gallery {
             title
@@ -184,19 +187,6 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 500, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-             }
-            }
-            text
-          }
         }
       }
     }

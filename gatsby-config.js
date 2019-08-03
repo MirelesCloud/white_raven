@@ -12,6 +12,15 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-source-shopify`,
+      options: {
+        shopName: "official-white-raven-creations",
+        accessToken: "33293484c9322b6abecd38edc50559d7",
+        verbose: true,
+        paginationSize: 250,
+      },
+    },
     'gatsby-plugin-stripe',
     {
       resolve: `gatsby-source-stripe`,

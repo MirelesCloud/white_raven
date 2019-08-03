@@ -36,10 +36,10 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
+        <section className="section ">
+          <div className="container ">
             <div className="content">
-              <h1>Contact</h1>
+              <h1 className="has-text-grey-lighter">Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -57,7 +57,7 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'name'}>
+                  <label className="label has-text-grey-lighter" htmlFor={'name'}>
                     Your name
                   </label>
                   <div className="control">
@@ -72,7 +72,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'email'}>
+                  <label className="label has-text-grey-lighter" htmlFor={'email'}>
                     Email
                   </label>
                   <div className="control">
@@ -87,7 +87,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'message'}>
+                  <label className="label has-text-grey-lighter" htmlFor={'message'}>
                     Message
                   </label>
                   <div className="control">
@@ -106,6 +106,14 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
+              <div className="section">
+                <div className="container">
+                  <div className="content">
+                    <p>If you would like to call our office for live painting bookings, commissions or other related inquiries, please call us at 808-747-2098.  
+                    Please note that our office hours are THURSDAY/FRIDAY from 8am-12pm, so if you would like a faster response please use the contact form above. Mahalo</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
