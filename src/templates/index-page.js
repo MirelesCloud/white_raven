@@ -48,6 +48,7 @@ const Line = styled.hr`
 
 export const IndexPageTemplate = ({
   image,
+  art,
   feature,
   heading,
   subheading,
@@ -112,8 +113,8 @@ export const IndexPageTemplate = ({
       backgroundAttachment: `fixed`,
 
     }}>
-      <Img fluid={image.childImageSharp.fluid}/>
-      <FeatureImages gridItems={feature.gallery} />
+      <Img fluid={art.childImageSharp.fluid}/>
+      
     </section>
       <Line/>
       <section>
@@ -138,6 +139,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        art={frontmatter.image2}
         feature={frontmatter.feature}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -169,7 +171,13 @@ export const pageQuery = graphql`
             }
           }
         }
-        feature_image
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 1500, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         feature {
           gallery {
             title
