@@ -46,6 +46,16 @@ const Line = styled.hr`
   height: 1px;
 `
 
+const ImageFrame = styled.div`
+  border: 8px solid rgba(102, 51, 0, 0.8);
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5) inset;
+  :hover {
+    transform: scale(1.01);
+  }
+`
+
 export const IndexPageTemplate = ({
   image,
   art,
@@ -113,13 +123,15 @@ export const IndexPageTemplate = ({
       backgroundAttachment: `fixed`,
 
     }}>
-      <Img fluid={art.childImageSharp.fluid}/>
-      
+      <ImageFrame>
+        <figure>
+          <Img fluid={art.childImageSharp.fluid}/>
+        </figure>
+      </ImageFrame>
     </section>
       <Line/>
       <section>
         <AboutRoll/>
-      
       </section>
       <Line/>
   </div>

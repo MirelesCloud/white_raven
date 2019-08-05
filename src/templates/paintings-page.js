@@ -42,8 +42,6 @@ export const PaintingsPageTemplate = ({
 
 )
 
-
-
 const PaintingsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
