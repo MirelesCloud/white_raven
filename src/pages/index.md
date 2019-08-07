@@ -11,7 +11,7 @@ mainpitch:
     give you access to my visionary artwork and bless your home or altar with
     its healing vibration.   
   title: Aloha...
-feature_image: /img/raven-love-213-large.jpg
+feature_image: /img/img_0614-large.jpg
 whiteraveninfo:
   image: /img/image2.jpg
   text: >-
