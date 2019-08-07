@@ -23,6 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
+    
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))
@@ -46,6 +47,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
+  
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`

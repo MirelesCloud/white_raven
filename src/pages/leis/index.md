@@ -23,6 +23,6 @@ main:
     - description: talk about this
       title: Rainbow Lei
       image: /img/Rainbow_Lei.jpg
-  heading: White Raven Leis
+  heading: White Raven Creations Leis
 ---
 

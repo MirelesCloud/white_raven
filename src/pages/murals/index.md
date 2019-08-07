@@ -35,6 +35,6 @@ main:
     - description: Swan Mural
       title: Saraswati Swan
       image: /img/Saraswati_s Swan 2015.jpg
-  heading: White Raven Murals
+  heading: White Raven Creations Murals
 ---
 
