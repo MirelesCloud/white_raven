@@ -2,7 +2,7 @@
 templateKey: index-page
 title: White Raven Creations
 image: /img/dominik-scythe-152888-unsplash.jpg
-image2: /img/Manos_y_semillas_detail_2.jpg
+feature_image: /img/Manos_y_semillas_detail_2.jpg
 heading: White Raven Creations
 subheading: Art Inspired Through The Mystery
 feature:
