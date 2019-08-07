@@ -34,6 +34,14 @@ collections:
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           - {label: Feature, name: feature_image, widget: image}
           - {label: About, name: whiteraveninfo, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}, {label: Image, name: image, widget: image}]}
+      - file: "src/pages/paintings/index.md"
+        label: "Paintings Page"
+        name: "paintings"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "murals-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Gallery, name: gallery, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
       - file: "src/pages/murals/index.md"
         label: "Murals Page"
         name: "murals"
