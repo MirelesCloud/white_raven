@@ -14,7 +14,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
       subheading={entry.getIn(['data', 'subheading'])}
-      feature={{ gallery }}
+      feature={entry.getIn(['data', 'image'])}
     />
   )
 }
