@@ -59,10 +59,10 @@ const ImageFrame = styled.div`
 export const IndexPageTemplate = ({
   image,
   art,
-  feature,
   heading,
   subheading,
   mainpitch,
+  about
   
 }) => (
   <div>
@@ -130,8 +130,30 @@ export const IndexPageTemplate = ({
       </ImageFrame>
     </section>
       <Line/>
-      <section>
-        <AboutRoll/>
+      <section className="section">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-8 is-offset-1">
+              <div className="columns">
+                <div className="column is-6">
+                  <div className="content">
+                    <h3 className="has-text-weight-light has-text-grey-lighter is-size-2">{about.title}</h3>
+                    <p>{about.text}</p>
+                  </div>
+                </div>
+                <div className="column is-6">
+                  <div className="content">
+                    <figure>
+                      <Img fluid={about.image.childImageSharp.fluid} style={{
+                        borderRadius: "50%"
+                      }}/>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <Line/>
   </div>
@@ -152,10 +174,10 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         art={frontmatter.feature_image}
-        feature={frontmatter.feature}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
+        about={frontmatter.whiteraveninfo}
       />
     </Layout>
   )
@@ -183,6 +205,13 @@ export const pageQuery = graphql`
             }
           }
         }
+        
+        heading
+        subheading
+        mainpitch {
+          title
+          description
+        }
         feature_image {
           childImageSharp {
             fluid(maxWidth: 1500, quality: 100) {
@@ -190,23 +219,16 @@ export const pageQuery = graphql`
             }
           }
         }
-        feature {
-          gallery {
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 800, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+        whiteraveninfo {
+          title
+          text
+          image {
+            childImageSharp {
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
         }
       }
     }
