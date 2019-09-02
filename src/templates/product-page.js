@@ -4,9 +4,7 @@ import Layout from '../components/Layout'
 
 
 
-export const ProductPageTemplate = ({
-  title
-}) => (
+export const ProductPageTemplate = () => (
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
@@ -26,11 +24,7 @@ const ProductPage = ({ data }) => {
        <section className="section">
           <div className="container">
             <div className="columns is-multiline">
-              {data.shopify.edges.map(({ node: sku }, idx ) => (
-                <div className="column is-4" key={idx}>
-                  <p>{sku.title}</p>
-                </div>
-              ))}
+             
             </div>
           </div>
         </section>
@@ -40,28 +34,3 @@ const ProductPage = ({ data }) => {
 
 export default ProductPage
 
-export const productPageQuery = graphql`
-  query ShopifyProd{
-    shopify: allShopifyProduct {
-      edges {
-        node {
-          id
-          title
-          description
-          variants {
-            price
-          }
-          images {
-            localFile {
-              childImageSharp {
-                fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`

@@ -6,13 +6,8 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import logo from "../img/logo.svg"
 import arrow from "../img/arrow.svg"
 
-
 import styled from 'styled-components'
-
 import Layout from '../components/Layout'
-import AboutRoll from '../components/AboutRoll'
-import FeatureImages from '../components/FeatureImages'
-
 import BreadCrumbBar from '../components/breadcrumbs'
 
 const Logo = styled.figure`

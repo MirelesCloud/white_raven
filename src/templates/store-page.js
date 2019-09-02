@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import StoreImages from '../components/StoreImages'
-import Cart from '../components/Cart'
-import Skus from '../components/Products/Skus'
-import Product from '../components/ProductGrid'
+
 
 import styled from 'styled-components'
 
@@ -18,8 +14,7 @@ const Line = styled.hr`
 
 
 export const StorePageTemplate = ({
-  image,
-  title,
+ 
   store,
 }) => (
   <div className="section">
@@ -59,7 +54,7 @@ const StorePage = ({ data }) => {
       <div className="section">
         <div className="container">
           <div className="columns">
-            <Product/>
+          
           </div>
         </div>
       </div>
