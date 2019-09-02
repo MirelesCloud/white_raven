@@ -48,7 +48,7 @@ const Header = styled.div`
   }
 `
 const ImageWrapper = styled.div`
-  position: "absolute"
+  position: "absolute";
   width: 300px;
   height: auto;
   zIndex: 2;

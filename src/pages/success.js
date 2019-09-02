@@ -9,7 +9,7 @@ const Success = () => (
         <div className="content">
           <div className="columns">
             <div className="column is-12 ">
-              <h1 className="has-text-light">Thank you for your purchase</h1>
+              <h1 className="has-text-light">Thank you for your message!</h1>
               <h2 className="has-text-light">Aloha....</h2>
             </div>
           </div>
