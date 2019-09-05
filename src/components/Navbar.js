@@ -93,6 +93,12 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Contact
               </Link>
+              <a className="navbar-item" 
+                href="https://www.patreon.com/Whiteravencreations/creators"
+                target="_blank"
+                >
+                Store
+              </a>
             </div>
           </div>
         </div>
