@@ -104,6 +104,10 @@ export const IndexPageTemplate = ({
               <br/>
               <div>
                 <BreadCrumbBar/>
+                <br/>
+                <div className="box has-text-centered">
+                  <a href="https://www.patreon.com/Whiteravencreations/" className="button is-uppercase is-medium">Official White Raven Creations Store</a>
+                </div>
                 <Line/>
               </div>
             </div>
