@@ -49,7 +49,7 @@ const Header = styled.div`
 `
 const ImageWrapper = styled.div`
   position: "absolute";
-  width: 300px;
+  maxWidth: 300px;
   height: auto;
   zIndex: 2;
   transition: .5s ease;
