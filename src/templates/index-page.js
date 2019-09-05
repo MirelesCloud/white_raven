@@ -54,6 +54,7 @@ const ImageFrame = styled.div`
 export const IndexPageTemplate = ({
   image,
   art,
+  signature,
   heading,
   subheading,
   mainpitch,
@@ -123,8 +124,23 @@ export const IndexPageTemplate = ({
 
     }}>
       <ImageFrame>
-        <figure>
-          <Img fluid={art.childImageSharp.fluid}/>
+        <figure style={{position: "relative"}}>
+          <Img fluid={art.childImageSharp.fluid}
+            style={{
+              position: "relative"
+            }}
+          />
+          <Img fluid={signature.childImageSharp.fluid}
+            style={{
+              width: "8%",
+              height: "auto",
+              position: "absolute",
+              top: "92%",
+              left: "90%",
+              borderRadius: "5px"
+
+            }}
+          />
         </figure>
       </ImageFrame>
     </section>
@@ -173,6 +189,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         art={frontmatter.feature_image}
+        signature={frontmatter.signature}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -200,6 +217,13 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        signature {
+          childImageSharp {
+            fluid(maxWidth: 100) {
               ...GatsbyImageSharpFluid
             }
           }
