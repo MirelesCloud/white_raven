@@ -2,11 +2,12 @@ import * as React from 'react'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Masonry from 'react-masonry-component'
 import Img from 'gatsby-image'
+import signature from '../img/wrsignature.png'
 
 import styled from 'styled-components'
 
 const masonryOptions = {
-    transitionDuration: 4
+    transitionDuration: 2
 };
 
 const Title = styled.h1`
@@ -114,6 +115,7 @@ const ImageFrame = styled.div`
   cursor: pointer;
 
 `
+
 const imagesLoadedOptions = { background: '.has-background-grey' }
 
 class GalleryImages extends React.Component {
@@ -157,9 +159,13 @@ class GalleryImages extends React.Component {
                 <ImageFrame onClick={ (evt) => this.openModal(evt, item) }>
                     <Container>
                       <ImageWrapper>
-                        <PreviewCompatibleImage imageInfo={item}
-                          openModal={this.openModal}
-                          />
+                        <div style={{position: "relative"}}>
+                          <PreviewCompatibleImage imageInfo={item}
+                            openModal={this.openModal}
+                            style={{position: "relative"}}
+                            />
+
+                        </div>
                       </ImageWrapper>
                       <Overlay>
                         <View>{item.title}</View>
@@ -182,16 +188,26 @@ class GalleryModal extends React.Component {
     let item = this.props.item
     let modalClass = this.props.open ? 'modal--open' : 'modal--closed'
     return (
-      <div class={modalClass}>
-        <div class="modal-background"></div>
-        <div class="modal-content" style={{marginTop: "5%"}}>
-          <button class="modal-close is-large" aria-label="close"
+      <div className={modalClass}>
+        <div className="modal-background"></div>
+        <div className="modal-content" style={{marginTop: "5%"}}>
+          <button className="modal-close is-large" aria-label="close"
             onClick={this.props.closeModal}>Close</button>
-          <figure class="image">
-            <Img fluid={item.image.childImageSharp.fluid}/>
+          <figure className="image" style={{position: "relative"}}>
+            <Img fluid={item.image.childImageSharp.fluid} style={{position: "relative"}}/>
+            <img src={signature}
+              style={{
+              width: "10%",
+              height: "auto",
+              position: "absolute",
+              top: "88%",
+              left: "85%",
+              borderRadius: "5px"
+            }}
+            />
             <Header><Title>{item.title}</Title></Header>
           </figure>
-          <button class="modal-close is-large" aria-label="close"
+          <button className="modal-close is-large" aria-label="close"
             onClick={this.props.closeModal}>Close</button>
         </div>
       </div>
