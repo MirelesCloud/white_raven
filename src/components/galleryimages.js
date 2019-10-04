@@ -164,7 +164,6 @@ class GalleryImages extends React.Component {
                             openModal={this.openModal}
                             style={{position: "relative"}}
                             />
-
                         </div>
                       </ImageWrapper>
                       <Overlay>
