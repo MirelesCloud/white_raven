@@ -6,10 +6,6 @@ image: /img/img_2660.jpeg
 tags:
   - '#art #stayhome #collaboration #shinebright'
 ---
-```
-<meta name="og:description" content="So much space. I feel it all around. As the wheels of the psyche of the world slow and soften, I find myself frequently, with soil in the hands, new life springing from freshly prepared planter cups, expansive sunsets which find me in spite of my happy “cave-dweller” personae through my studio window, my little view of the paradise in which we live here." />
-```
-
 From White Raven Creations Studio
 
 So much space. I feel it all around. As the wheels of the psyche of the world slow and soften, I find myself frequently, with soil in the hands, new life springing from freshly prepared planter cups, expansive sunsets which find me in spite of my happy “cave-dweller” personae through my studio window, my little view of the paradise in which we live here. Although much physical distance is now being felt by humans, we are truly remembering to connect with intention and caring, checking in on those we love and cherish, finding the precious time to reconnect with Spirit...our spirits, and find that sweet, sweet space within. I find myself reflecting, resting and reading a lot of story! There is so much story to be found. There is so much infinite dedicated patience within the solar center of being, that holds story in its brief yet considerate gaze, for just the perfect timespan to dismiss and dismantle whatever state of fixed being had become actualized delusion. Remember the 5th agreement? 
