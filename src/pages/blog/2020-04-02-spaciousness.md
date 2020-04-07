@@ -7,7 +7,7 @@ tags:
   - '#art #stayhome #collaboration #shinebright'
 ---
 ```
-<meta property="og:title" content="Spaciousness" />
+<meta name="og:description" content="So much space. I feel it all around. As the wheels of the psyche of the world slow and soften, I find myself frequently, with soil in the hands, new life springing from freshly prepared planter cups, expansive sunsets which find me in spite of my happy “cave-dweller” personae through my studio window, my little view of the paradise in which we live here." />
 ```
 
 From White Raven Creations Studio
