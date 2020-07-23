@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: 'Spaciousness '
 date: 2020-04-03T02:03:00.627Z
-image: /img/img_2660.jpeg
+image: /img/img_2660-900x900-01.jpg
 tags:
   - '#art #stayhome #collaboration #shinebright'
 ---
