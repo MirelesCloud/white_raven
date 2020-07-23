@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Probability and Possibility
 date: 2020-07-23T03:37:07.231Z
-image: /img/072220_01.jpeg
+image: /img/072220_01-a-900x900-01.jpg
 tags:
   - blog
   - white raven
