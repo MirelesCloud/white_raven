@@ -2,7 +2,6 @@
 templateKey: index-page
 title: White Raven Creations
 image: /img/dominik-scythe-152888-unsplash.jpg
-signature: /img/wrsignature.png
 heading: White Raven Creations
 subheading: Art Inspired Through The Mystery
 mainpitch:
@@ -16,8 +15,8 @@ feature_image: /img/img_0614-large.jpg
 whiteraveninfo:
   image: /img/image2.jpg
   text: >-
-    Raven Michelle Diaz Raven was raised in a very artistic and musical home,
-    and from an early age developed a love for the creative process.
+    Raven was raised in a very artistic and musical home, and from an early age
+    developed a love for the creative process.
 
     She sat next to her Grandfather who was a talented painter and absorbed much
     of his artistic process. During her adolescence she took several art classes
